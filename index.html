@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khaoula Sidi | Élève ingénieure en Génie Informatique</title>
+  <meta name="description" content="Portfolio de Khaoula Sidi, élève ingénieure en Génie Informatique, développement Full-Stack. À la recherche d'un stage PFE de 6 mois à partir de Février 2027." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ICONES SVG (sprite) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8M8 9h2"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+  </svg>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">KS<span>.</span></a>
+    <nav id="nav-links" class="nav-links">
+      <a href="#about" data-i18n="nav-about">À propos</a>
+      <a href="#experience" data-i18n="nav-experience">Expérience</a>
+      <a href="#projects" data-i18n="nav-projects">Projets</a>
+      <a href="#skills" data-i18n="nav-skills">Compétences</a>
+      <a href="#education" data-i18n="nav-education">Formation</a>
+      <a href="#cv" data-i18n="nav-cv">CV</a>
+      <a href="#contact" data-i18n="nav-contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="lang-toggle" class="icon-btn lang-btn" aria-label="Changer de langue"><span id="lang-text">FR</span></button>
+      <button id="menu-toggle" class="icon-btn menu-btn" aria-label="Menu"><svg class="ico"><use href="#i-menu"/></svg></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+      <div class="container hero-inner">
+        <p class="badge reveal"><span class="dot"></span> <span data-i18n="hero-badge">Disponible pour un stage PFE — Février 2027</span></p>
+        <h1 class="reveal"><span data-i18n="hero-title">Bonjour, je suis</span> <span class="grad">Khaoula Sidi</span></h1>
+        <h2 class="reveal"><span id="typed"></span><span class="cursor">|</span></h2>
+        <p class="lead reveal" data-i18n="hero-lead">
+          Élève ingénieure en Génie Informatique, passionnée par la conception et le développement
+          d'applications web et mobile. À la recherche d'un stage PFE de  6 mois.
+        </p>
+        <div class="hero-btns reveal">
+          <a href="#projects" class="btn primary" data-i18n="hero-btn-projects">Voir mes projets</a>
+          <a href="#cv" class="btn ghost"><svg class="ico"><use href="#i-file"/></svg> <span data-i18n="hero-btn-cv">Voir mon CV</span></a>
+          <a href="#contact" class="btn ghost" data-i18n="hero-btn-contact">Me contacter</a>
+        </div>
+        <div class="socials reveal">
+          <a href="https://github.com/khawla858" target="_blank" rel="noopener"><svg class="ico"><use href="#i-github"/></svg> GitHub</a>
+          <a href="https://linkedin.com/in/khawla-sidi" target="_blank" rel="noopener"><svg class="ico"><use href="#i-linkedin"/></svg> LinkedIn</a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=khaoula192004@gmail.com&su=Opportunit%C3%A9%20de%20stage%20PFE" target="_blank" rel="noopener"><svg class="ico"><use href="#i-mail"/></svg> Email</a>        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h3 class="section-title reveal" data-i18n="about-title">À propos de <span class="grad">moi</span></h3>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p data-i18n="about-p1">
+              Étudiante en <strong>Génie Informatique</strong>, spécialisée en <strong>Génie Logiciel</strong>
+              et développement <strong>Full-Stack</strong>. J'aime concevoir des applications web et mobile
+              robustes, avec des compétences en Java, Spring Boot, API REST, Python, Next.js et bases de données.
+            </p>
+            <p data-i18n="about-p2">
+              Mes compétences ont été acquises à travers plusieurs projets académiques et une expérience
+              pratique en entreprise. Je cherche aujourd'hui un <strong>stage PFE de 6 mois à partir de
+              Février 2027</strong> pour contribuer à des projets logiciels concrets.
+            </p>
+            <div class="info-list">
+              <div><span><svg class="ico"><use href="#i-pin"/></svg> <span data-i18n="info-loc">Localisation</span></span> <span data-i18n="info-loc-val">Maroc</span></div>
+              <div><span><svg class="ico"><use href="#i-mail"/></svg> <span data-i18n="info-email">Email</span></span> khaoula192004@gmail.com</div>
+              <div><span><svg class="ico"><use href="#i-phone"/></svg> <span data-i18n="info-phone">Téléphone</span></span> +212 6 18 98 84 66</div>
+              <div><span><svg class="ico"><use href="#i-briefcase"/></svg> <span data-i18n="info-objective">Objectif</span></span> <span data-i18n="info-objective-val">Stage PFE · 6 mois</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section alt">
+      <div class="container">
+        <h3 class="section-title reveal" data-i18n="experience-title">Expérience <span class="grad">professionnelle</span></h3>
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-dot"></div>
+            <div class="card">
+              <span class="date" data-i18n="exp1-date">Juin 2025 — Août 2025</span>
+              <h4 data-i18n="exp1-title">Stagiaire Développeuse Frontend (Next.js)</h4>
+              <p class="company" data-i18n="exp1-company">NichanLabs, Errachidia</p>
+              <ul>
+                <li data-i18n="exp1-li1">Participation au développement d'une plateforme de gestion scolaire au sein d'une équipe projet.</li>
+                <li data-i18n="exp1-li2">Développement de l'interface utilisateur avec Next.js et Tailwind CSS.</li>
+                <li data-i18n="exp1-li3">Intégration des API REST développées avec NestJS et connectées à une base de données MongoDB.</li>
+                <li data-i18n="exp1-li4">Collaboration avec GitHub (versionnement), Jira (suivi des tâches) et Postman (tests des API).</li>
+              </ul>
+              <div class="tags"><span>Next.js</span><span>Tailwind CSS</span><span>NestJS</span><span>MongoDB</span><span>Jira</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h3 class="section-title reveal" data-i18n="projects-title">Mes <span class="grad">projets</span></h3>
+
+        <div class="filters reveal">
+          <button class="filter active" data-filter="all" data-i18n="filter-all">Tous</button>
+          <button class="filter" data-filter="web" data-i18n="filter-web">Web / Backend</button>
+          <button class="filter" data-filter="desktop" data-i18n="filter-desktop">Desktop</button>
+          <button class="filter" data-filter="ai" data-i18n="filter-ai">IA / Python</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Projet 1 -->
+          <article class="card project reveal" data-cat="web" data-project="cabinet">
+            <div class="p-media">
+              <img src="portfolio\images\img cabinet medc.jpg" alt="Aperçu du projet Gestion d'un cabinet médical" width="800" height="500" loading="lazy" />
+              <span class="p-cat" data-i18n="cat-web">Web / Backend</span>
+            </div>
+            <div class="p-body">
+              <h4 data-i18n="proj1-title">Gestion d'un cabinet médical</h4>
+              <p data-i18n="proj1-desc">Gestion des patients, médecins et dossiers médicaux, avec un système de demandes de consultation validées ou refusées par l'administration. API REST sécurisée.</p>
+              <div class="tags"><span>Spring Boot</span><span>MySQL</span><span>API REST</span></div>
+              <div class="p-links">
+                <a class="p-link" data-link="git" target="_blank" rel="noopener"><svg class="ico"><use href="https://github.com/khawla858/Medical_Spring-boot.git"/></svg> <span data-i18n="link-git">Code source</span></a>
+                <a class="p-link demo" data-link="demo" target="_blank" rel="noopener"><svg class="ico"><use href="https://lnkd.in/p/em5p8ihV"/></svg> <span data-i18n="link-demo">Démo live</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 2 -->
+          <article class="card project reveal" data-cat="web" data-project="microservices">
+            <div class="p-media">
+              <img src="images/enrol.jpg" alt="Aperçu du projet Application en microservices" width="800" height="500" loading="lazy" />
+              <span class="p-cat" data-i18n="cat-web">Web / Backend</span>
+            </div>
+            <div class="p-body">
+              <h4 data-i18n="proj2-title">AcadémIA — Système d'inscription en microservices</h4>
+              <p data-i18n="proj2-desc">Application décomposée en plusieurs microservices indépendants, communiquant via API REST, avec une séparation claire des responsabilités et des données.</p>
+              <div class="tags"><span>Spring Boot</span><span>Microservices</span><span>API REST</span></div>
+              <div class="p-links">
+                <a class="p-link" data-link="git" target="_blank" rel="noopener"><svg class="ico"><use href="https://github.com/khawla858/Microservice_Spring-boot.git"/></svg> <span data-i18n="link-git">Code source</span></a>
+                <a class="p-link demo" data-link="demo" target="_blank" rel="noopener"><svg class="ico"><use href="#i-external"/></svg> <span data-i18n="link-demo">Démo live</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 3 -->
+          <article class="card project reveal" data-cat="desktop" data-project="vehicules">
+            <div class="p-media">
+              <img src="images/VOIT IMG.jpg" alt="Aperçu du projet Gestion et vente de véhicules" width="800" height="500" loading="lazy" />
+              <span class="p-cat" data-i18n="cat-desktop">Desktop</span>
+            </div>
+            <div class="p-body">
+              <h4 data-i18n="proj3-title">Gestion et vente de véhicules</h4>
+              <p data-i18n="proj3-desc">Application desktop JavaFX de gestion des véhicules, clients et ventes. Recherche avancée, visualisation des données et logs avec Elasticsearch et Kibana.</p>
+              <div class="tags"><span>Java</span><span>JavaFX</span><span>PostgreSQL</span><span>Elasticsearch</span><span>Kibana</span></div>
+              <div class="p-links">
+                <a class="p-link" data-link="git" target="_blank" rel="noopener"><svg class="ico"><use href="https://github.com/khawla858/vehiclegestion_Javafx.git"/></svg> <span data-i18n="link-git">Code source</span></a>
+                <a class="p-link demo" data-link="demo" target="_blank" rel="noopener"><svg class="ico"><use href="https://lnkd.in/p/eWm469ET"/></svg> <span data-i18n="link-demo">Démo live</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 4 -->
+          <article class="card project reveal" data-cat="ai" data-project="multimedia">
+            <div class="p-media">
+              <img src="images/mutlidia.jpg" alt="Aperçu du projet Analyse multimédia intelligente" width="800" height="500" loading="lazy" />
+              <span class="p-cat" data-i18n="cat-ai">IA / Python</span>
+            </div>
+            <div class="p-body">
+              <h4 data-i18n="proj4-title">Analyse multimédia intelligente</h4>
+              <p data-i18n="proj4-desc">Analyse de vidéos YouTube et de contenus académiques, avec génération de résumés (texte et images clés).</p>
+              <div class="tags"><span>Python</span><span>Flask</span><span>Machine Learning</span><span>SQLite</span></div>
+              <div class="p-links">
+                <a class="p-link" data-link="git" target="_blank" rel="noopener"><svg class="ico"><use href="https://github.com/khawla858/Python_projet_preparation_donn-es-.git"/></svg> <span data-i18n="link-git">Code source</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 5 -->
+          <article class="card project reveal" data-cat="web" data-project="affectation">
+            <div class="p-media">
+              <img src="images/WhatsApp Image 2026-10-13 at 12.41.22.jpeg" alt="Aperçu du projet Affectation des unités d'enseignement" width="800" height="500" loading="lazy" />
+              <span class="p-cat" data-i18n="cat-web">Web / Backend</span>
+            </div>
+            <div class="p-body">
+              <h4 data-i18n="proj5-title">Affectation des unités d'enseignement</h4>
+              <p data-i18n="proj5-desc">Application web de gestion des unités d'enseignement et des affectations des professeurs.</p>
+              <div class="tags"><span>PHP</span><span>JavaScript</span><span>Bootstrap</span><span>MySQL</span></div>
+              <div class="p-links">
+                <a class="p-link" data-link="git" target="_blank" rel="noopener"><svg class="ico"><use href="https://github.com/khawla858/Web_enseignement.git"/></svg> <span data-i18n="link-git">Code source</span></a>
+<a class="p-link demo" href="images/WhatsApp Video 2026-10-13 at 20.16.50.mp4" target="_blank" rel="noopener"><svg class="ico"><use href="#i-external"/></svg> <span data-i18n="link-demo">Voir la vidéo</span></a>              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="center reveal">
+          <a href="https://github.com/khawla858" target="_blank" rel="noopener" class="btn ghost"><svg class="ico"><use href="#i-github"/></svg> <span data-i18n="github-all">Voir tous mes dépôts sur GitHub</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h3 class="section-title reveal" data-i18n="skills-title">Compétences <span class="grad">techniques</span></h3>
+        <div class="skills-grid">
+          <div class="card skill-card reveal">
+            <h4 data-i18n="skill-lang">Langages</h4>
+            <div class="tags big"><span>C</span><span>C++</span><span>Java</span><span>Python</span><span>JavaScript</span><span>PHP</span><span>SQL</span><span>HTML</span><span>CSS</span></div>
+          </div>
+          <div class="card skill-card reveal">
+            <h4 data-i18n="skill-fw">Frameworks</h4>
+            <div class="tags big"><span>Spring Boot</span><span>React.js</span><span>Next.js</span><span>Flask</span><span>Bootstrap</span><span>Tailwind CSS</span></div>
+          </div>
+          <div class="card skill-card reveal">
+            <h4 data-i18n="skill-db">Bases de données</h4>
+            <div class="tags big"><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>SQLite</span><span>Oracle DB</span></div>
+          </div>
+          <div class="card skill-card reveal">
+            <h4 data-i18n="skill-search">Recherche & visualisation</h4>
+            <div class="tags big"><span>Elasticsearch</span><span>Kibana</span></div>
+          </div>
+          <div class="card skill-card reveal">
+            <h4 data-i18n="skill-tools">Outils & technologies</h4>
+            <div class="tags big"><span>Git</span><span>GitHub</span><span>Jira</span><span>Postman</span><span>JavaFX</span><span>VS Code</span><span>Qt Creator</span><span>Linux</span><span>Canva</span><span>Gamma</span></div>
+          </div>
+          <div class="card skill-card reveal">
+            <h4 data-i18n="skill-dom">Domaines</h4>
+            <div class="tags big"><span data-i18n="dom1">Génie logiciel</span><span>Full-Stack</span><span>API REST</span><span>Microservices</span><span>POO</span><span>SQL / NoSQL</span></div>
+          </div>
+        </div>
+
+        <h4 class="sub-title reveal" data-i18n="skills-trans">Compétences transversales</h4>
+        <div class="tags big center-tags reveal">
+          <span data-i18n="trans1">Gestion de projet</span><span data-i18n="trans2">Travail en équipe</span>
+          <span data-i18n="trans3">Résolution de problèmes</span><span data-i18n="trans4">Esprit critique</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <h3 class="section-title reveal" data-i18n="education-title">Formation & <span class="grad">langues</span></h3>
+        <div class="edu-layout">
+          <div class="timeline">
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="card">
+                <span class="date">2024 — 2027</span>
+                <h4 data-i18n="edu1-title">Cycle d'ingénieur — Génie Informatique</h4>
+                <p class="company" data-i18n="edu1-company">École Nationale des Sciences Appliquées d'Al Hoceima, Maroc</p>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="card">
+                <span class="date">2022 — 2024</span>
+                <h4 data-i18n="edu2-title">Cycle préparatoire intégré</h4>
+                <p class="company" data-i18n="edu2-company">École Nationale des Sciences Appliquées d'Al Hoceima, Maroc</p>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="card">
+                <span class="date">2021 — 2022</span>
+                <h4 data-i18n="edu3-title">Baccalauréat — Sciences Mathématiques A (option français)</h4>
+                <p class="company" data-i18n="edu3-company">Lycée Salah Eddine El Ayoubi, Tinghir, Maroc</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lang-box reveal">
+            <h4 data-i18n="lang-title">Langues</h4>
+            <div class="lang"><div class="lang-head"><span data-i18n="lang-ar">Arabe</span><small data-i18n="lang-ar-lvl">Langue maternelle</small></div><div class="bar"><i data-w="100"></i></div></div>
+            <div class="lang"><div class="lang-head"><span data-i18n="lang-fr">Français</span><small data-i18n="lang-fr-lvl">Courant</small></div><div class="bar"><i data-w="85"></i></div></div>
+            <div class="lang"><div class="lang-head"><span data-i18n="lang-en">Anglais</span><small data-i18n="lang-en-lvl">Intermédiaire </small></div><div class="bar"><i data-w="65"></i></div></div>
+
+            <h4 class="mt" data-i18n="interests-title">Centres d'intérêt</h4>
+            <div class="tags big"><span data-i18n="int1">Projets personnels de développement</span><span data-i18n="int2">Lecture</span><span data-i18n="int3">Sport</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section id="cv" class="section alt compact">
+      <div class="container">
+        <div class="cv-compact card reveal">
+          <button type="button" class="cv-thumb" id="cv-open" aria-label="Agrandir le CV">
+            <img id="cv-thumb" src="images/cv-apercu-1.png" alt="Aperçu du CV de Khaoula Sidi" loading="lazy" />
+          </button>
+          <div class="cv-info">
+            <h4 data-i18n="cv-title">Mon <span class="grad">CV</span> et ma lettre</h4>
+            <p data-i18n="cv-desc">Élève ingénieure en Génie Informatique · Stage PFE de 6 mois dès Février 2027. Cliquez sur l'aperçu pour l'agrandir.</p>
+            <div class="cv-actions">
+              <a class="btn primary" href="CV_Khaoula_Sidi.pdf" target="_blank" rel="noopener"><svg class="ico"><use href="#i-file"/></svg> <span data-i18n="cv-btn-fr">CV en français</span></a>
+              <a class="btn primary" href="images/CV_Khaoula_Sidi_ENG.pdf" target="_blank" rel="noopener"><svg class="ico"><use href="#i-file"/></svg> <span data-i18n="cv-btn-en">CV en anglais</span></a>
+              <a class="btn ghost" href="images/Lettre_Motivation_Khaoula Sidi_PFE.pdf" target="_blank" rel="noopener"><svg class="ico"><use href="#i-file"/></svg> <span data-i18n="cv-btn-letter">Lettre de motivation</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h3 class="section-title reveal" data-i18n="contact-title">Me <span class="grad">contacter</span></h3>
+        <p class="center lead reveal" data-i18n="contact-lead">Un projet, une opportunité de stage PFE ou juste envie d'échanger ? Écrivez-moi !</p>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+<a class="c-item" href="https://mail.google.com/mail/?view=cm&fs=1&to=khaoula192004@gmail.com&su=Opportunit%C3%A9%20de%20stage%20PFE" target="_blank" rel="noopener">
+  <span class="c-ico"><svg class="ico"><use href="#i-mail"/></svg></span>
+  <div><b data-i18n="contact-email">Email</b><small>khaoula192004@gmail.com</small></div>
+</a>            <a class="c-item" href="tel:+212618988466"><span class="c-ico"><svg class="ico"><use href="#i-phone"/></svg></span><div><b data-i18n="contact-phone">Téléphone</b><small>+212 6 18 98 84 66</small></div></a>
+            <a class="c-item" href="https://linkedin.com/in/khawla-sidi" target="_blank" rel="noopener"><span class="c-ico"><svg class="ico"><use href="#i-linkedin"/></svg></span><div><b>LinkedIn</b><small>linkedin.com/in/khawla-sidi</small></div></a>
+            <a class="c-item" href="https://github.com/khawla858" target="_blank" rel="noopener"><span class="c-ico"><svg class="ico"><use href="#i-github"/></svg></span><div><b>GitHub</b><small>github.com/khawla858</small></div></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> _ Khaoula Sidi </p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" hidden aria-modal="true" role="dialog"><img alt="" /></div>
+
+  <button id="to-top" class="to-top" aria-label="Haut de page"><svg class="ico"><use href="#i-up"/></svg></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<style>
+  /* ============ THEME ============ */
+:root {
+  --bg: #0b0f1a;
+  --bg-alt: #0f1424;
+  --card: #141a2e;
+  --card-border: rgba(255, 255, 255, 0.08);
+  --text: #e8ebf5;
+  --muted: #9aa3bd;
+  --accent: #8b5cf6;
+  --accent-2: #22d3ee;
+  --grad: linear-gradient(135deg, #8b5cf6, #22d3ee);
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
+  --radius: 18px;
+}
+
+[data-theme="light"] {
+  --bg: #f7f8fc;
+  --bg-alt: #eef0f8;
+  --card: #ffffff;
+  --card-border: rgba(20, 25, 60, 0.08);
+  --text: #151a33;
+  --muted: #5d6585;
+  --shadow: 0 10px 30px rgba(40, 50, 110, 0.1);
+}
+
+/* ============ BASE ============ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; overflow-x: hidden; max-width: 100%; }
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  transition: background 0.3s, color 0.3s;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+h1, h2, h3, h4 { font-family: "Space Grotesk", sans-serif; line-height: 1.2; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+img { display: block; max-width: 100%; }
+.container { width: min(1100px, 92%); margin: 0 auto; }
+.center { text-align: center; }
+.grad { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+/* Icônes SVG */
+.ico {
+  width: 1.1em; height: 1.1em; flex: none;
+  stroke: currentColor; fill: none; stroke-width: 2;
+  stroke-linecap: round; stroke-linejoin: round;
+  vertical-align: -0.17em;
+}
+
+/* Langue */
+.lang-btn {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  color: var(--accent-2);
+  width: auto;
+  padding: 0 12px;
+}
+.lang-btn:hover { color: var(--accent); }
+
+/* ============ NAVBAR ============ */
+.navbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 5%;
+  transition: background 0.3s, box-shadow 0.3s, padding 0.3s;
+}
+.navbar.scrolled {
+  background: color-mix(in srgb, var(--bg) 82%, transparent);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 1px 0 var(--card-border);
+  padding: 10px 5%;
+}
+.logo { font-family: "Space Grotesk", sans-serif; font-weight: 700; font-size: 1.6rem; }
+.logo span { color: var(--accent-2); }
+.nav-links { display: flex; gap: 26px; }
+.nav-links a { font-size: 0.95rem; color: var(--muted); position: relative; transition: color 0.2s; }
+.nav-links a:hover, .nav-links a.active { color: var(--text); }
+.nav-links a::after {
+  content: ""; position: absolute; left: 0; bottom: -4px; height: 2px; width: 0;
+  background: var(--grad); transition: width 0.3s;
+}
+.nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+.nav-actions { display: flex; gap: 10px; }
+.icon-btn {
+  width: 40px; height: 40px; border-radius: 12px; cursor: pointer;
+  display: inline-grid; place-items: center;
+  background: var(--card); border: 1px solid var(--card-border); color: var(--text);
+  transition: transform 0.2s;
+}
+.icon-btn .ico { width: 18px; height: 18px; vertical-align: 0; }
+.icon-btn:hover { transform: translateY(-2px); }
+.menu-btn { display: none; }
+
+/* ============ HERO ============ */
+.hero {
+  min-height: 100vh; display: flex; align-items: center; position: relative; overflow: hidden;
+  padding: 110px 0 60px;
+}
+.blob { position: absolute; border-radius: 50%; filter: blur(90px); opacity: 0.35; z-index: 0; animation: float 12s ease-in-out infinite; }
+.blob1 { width: 420px; height: 420px; background: #8b5cf6; top: -80px; right: -60px; }
+.blob2 { width: 360px; height: 360px; background: #22d3ee; bottom: -80px; left: -80px; animation-delay: -5s; }
+@keyframes float { 0%,100% { transform: translateY(0) scale(1); } 50% { transform: translateY(30px) scale(1.08); } }
+.hero-inner { position: relative; z-index: 1; }
+.badge {
+  display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px; border-radius: 999px;
+  background: var(--card); border: 1px solid var(--card-border); font-size: 0.85rem; color: var(--muted);
+  margin-bottom: 22px;
+}
+.dot { width: 9px; height: 9px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 0 rgba(34,197,94,.6); animation: pulse 2s infinite; flex: none; }
+@keyframes pulse { 70% { box-shadow: 0 0 0 10px rgba(34,197,94,0); } 100% { box-shadow: 0 0 0 0 rgba(34,197,94,0); } }
+.hero h1 { font-size: clamp(2.3rem, 6vw, 4.2rem); margin-bottom: 12px; }
+.hero h2 { font-size: clamp(1.2rem, 3vw, 1.8rem); font-weight: 500; color: var(--muted); min-height: 2.2rem; margin-bottom: 20px; }
+.cursor { color: var(--accent-2); animation: blink 1s steps(1) infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+.lead { max-width: 640px; color: var(--muted); font-size: 1.05rem; }
+.hero-btns { display: flex; gap: 14px; margin: 30px 0 26px; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 9px;
+  padding: 13px 28px; border-radius: 14px; font-weight: 600; font-size: 0.95rem;
+  cursor: pointer; border: 1px solid transparent; transition: transform 0.25s, box-shadow 0.25s;
+  font-family: inherit;
+}
+.btn.primary { background: var(--grad); color: #fff; box-shadow: 0 10px 30px rgba(139, 92, 246, 0.35); }
+.btn.ghost { border-color: var(--card-border); background: var(--card); color: var(--text); }
+.btn:hover { transform: translateY(-3px); }
+.socials { display: flex; gap: 22px; flex-wrap: wrap; }
+.socials a { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-size: 0.92rem; padding-bottom: 2px; border-bottom: 1px dashed var(--card-border); transition: color 0.2s; }
+.socials a:hover { color: var(--accent-2); }
+
+/* ============ SECTIONS ============ */
+.section { padding: 100px 0; }
+.section.alt { background: var(--bg-alt); }
+.section-title { font-size: clamp(1.8rem, 4vw, 2.5rem); text-align: center; margin-bottom: 50px; }
+.sub-title { text-align: center; margin: 50px 0 20px; font-size: 1.3rem; }
+
+.card {
+  min-width: 0;
+  background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius);
+  padding: 26px; box-shadow: var(--shadow); transition: transform 0.3s, border-color 0.3s;
+}
+.card:hover { transform: translateY(-6px); border-color: color-mix(in srgb, var(--accent) 50%, transparent); }
+
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.tags span {
+  font-size: 0.78rem; padding: 5px 12px; border-radius: 999px; font-weight: 500;
+  background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent-2);
+  border: 1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+}
+[data-theme="light"] .tags span { color: #6d3fe0; }
+.tags.big span { font-size: 0.85rem; padding: 7px 14px; }
+.center-tags { justify-content: center; }
+
+/* ABOUT */
+.about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: center; }
+.about-text { min-width: 0; }
+.about-text p { color: var(--muted); margin-bottom: 16px; }
+.about-text strong { color: var(--text); }
+.info-list { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 24px; font-size: 0.92rem; }
+.info-list div { min-width: 0; background: var(--card); border: 1px solid var(--card-border); border-radius: 14px; padding: 12px 16px; overflow-wrap: anywhere; }
+.info-list span { display: flex; align-items: center; gap: 7px; font-size: 0.75rem; color: var(--muted); }
+.info-list .ico { color: var(--accent-2); }
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.stat { background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 26px 16px; text-align: center; box-shadow: var(--shadow); }
+.stat b { display: block; font-family: "Space Grotesk", sans-serif; font-size: 2.6rem; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.stat small { color: var(--muted); }
+
+/* TIMELINE */
+.timeline { position: relative; padding-left: 34px; max-width: 800px; margin: 0 auto; }
+.timeline::before { content: ""; position: absolute; left: 8px; top: 6px; bottom: 6px; width: 2px; background: var(--grad); opacity: 0.5; }
+.tl-item { position: relative; margin-bottom: 26px; }
+.tl-dot { position: absolute; left: -34px; top: 26px; width: 18px; height: 18px; border-radius: 50%; background: var(--grad); border: 4px solid var(--bg); }
+.section.alt .tl-dot { border-color: var(--bg-alt); }
+.date { font-size: 0.8rem; color: var(--accent-2); font-weight: 600; letter-spacing: 0.03em; }
+.card h4 { font-size: 1.15rem; margin: 6px 0 4px; }
+.company { color: var(--muted); font-size: 0.92rem; }
+.card ul { margin-top: 14px; }
+.card li { position: relative; padding-left: 20px; color: var(--muted); font-size: 0.93rem; margin-bottom: 8px; }
+.card li::before { content: ""; position: absolute; left: 3px; top: 0.7em; width: 6px; height: 6px; border-radius: 50%; background: var(--grad); }
+
+/* PROJECTS */
+.filters { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 36px; }
+.filter {
+  padding: 9px 20px; border-radius: 999px; cursor: pointer; font-family: inherit; font-size: 0.88rem;
+  background: var(--card); border: 1px solid var(--card-border); color: var(--muted); transition: all 0.25s;
+}
+.filter:hover { color: var(--text); }
+.filter.active { background: var(--grad); color: #fff; border-color: transparent; }
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 26px; margin-bottom: 40px; }
+.project { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
+.p-media {
+  position: relative; aspect-ratio: 16 / 10; overflow: hidden;
+  background: var(--bg-alt); border-bottom: 1px solid var(--card-border);
+}
+.p-media img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.project:hover .p-media img { transform: scale(1.05); }
+.p-cat {
+  position: absolute; top: 12px; left: 12px; padding: 4px 11px; border-radius: 999px;
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.03em; color: #fff;
+  background: rgba(11, 15, 26, 0.72); backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+.p-body { display: flex; flex-direction: column; flex: 1; padding: 22px 24px 24px; }
+.p-body h4 { margin-top: 0; }
+.project p { color: var(--muted); font-size: 0.92rem; margin-top: 4px; }
+.p-links { display: flex; gap: 10px; flex-wrap: wrap; margin-top: auto; padding-top: 20px; }
+.p-link {
+  display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 10px;
+  font-size: 0.85rem; font-weight: 600; cursor: pointer;
+  background: transparent; color: var(--text); border: 1px solid var(--card-border);
+  transition: transform 0.2s, border-color 0.2s, background 0.2s;
+}
+.p-link:hover { transform: translateY(-2px); border-color: var(--accent); }
+.p-link.demo { background: var(--grad); color: #fff; border-color: transparent; }
+.project.hide { display: none; }
+
+.p-media img { cursor: zoom-in; object-position: top center; }
+.lightbox {
+  position: fixed; inset: 0; z-index: 200; display: grid; place-items: center; padding: 24px;
+  background: rgba(5, 8, 16, 0.88); backdrop-filter: blur(6px); cursor: zoom-out;
+}
+.lightbox[hidden] { display: none; }
+.lightbox img { max-width: min(1100px, 100%); max-height: 100%; width: auto; height: auto; border-radius: 12px; box-shadow: var(--shadow); }
+
+/* CV */
+.cv-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 36px; align-items: stretch; }
+.cv-card { display: flex; flex-direction: column; align-items: flex-start; }
+.cv-card:hover { transform: none; }
+.cv-ico { width: 56px; height: 56px; margin-bottom: 18px; }
+.cv-ico .ico { width: 26px; height: 26px; }
+.cv-card h4 { margin-top: 0; font-size: 1.3rem; }
+.cv-card p { color: var(--muted); margin-top: 8px; }
+.cv-preview { min-width: 0; max-height: 640px; overflow-y: auto; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--card-border); box-shadow: var(--shadow); background: var(--card); }
+.cv-preview a { display: block; }
+.cv-preview img { width: 100%; height: auto; display: block; }
+.cv-fallback { padding: 24px; color: var(--muted); }
+.cv-fallback a { color: var(--accent-2); text-decoration: underline; }
+
+/* CV Compact */
+.cv-compact { display: flex; gap: 30px; align-items: center; }
+.cv-thumb { flex: none; width: 160px; padding: 0; border: 1px solid var(--card-border); border-radius: 12px; overflow: hidden; cursor: zoom-in; background: var(--bg-alt); }
+.cv-thumb img { width: 100%; height: auto; display: block; }
+.cv-info { flex: 1; }
+.cv-info h4 { font-size: 1.3rem; }
+.cv-info p { color: var(--muted); margin-top: 6px; }
+.cv-actions { display: flex; gap: 10px; margin-top: 16px; flex-wrap: wrap; }
+
+/* SKILLS */
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 24px; }
+.skill-card h4 { font-size: 1.05rem; }
+
+/* EDUCATION */
+.edu-layout { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: start; }
+.edu-layout .timeline { margin: 0; max-width: none; min-width: 0; }
+.lang-box { min-width: 0; background: var(--card); border: 1px solid var(--card-border); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); }
+.lang-box h4 { margin-bottom: 18px; }
+.lang-box h4.mt { margin-top: 30px; margin-bottom: 0; }
+.lang { margin-bottom: 18px; }
+.lang-head { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; font-size: 0.92rem; margin-bottom: 6px; }
+.lang-head small { color: var(--muted); }
+.bar { height: 8px; border-radius: 99px; background: color-mix(in srgb, var(--muted) 20%, transparent); overflow: hidden; }
+.bar i { display: block; height: 100%; width: 0; background: var(--grad); border-radius: 99px; transition: width 1.4s cubic-bezier(.2,.8,.2,1); }
+
+/* CONTACT */
+.contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 36px; margin-top: 40px; }
+.contact-info { min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+.c-item { display: flex; gap: 16px; align-items: center; min-width: 0; background: var(--card); border: 1px solid var(--card-border); border-radius: 16px; padding: 16px 20px; transition: transform 0.25s, border-color 0.25s; }
+.c-item:hover { transform: translateX(6px); border-color: var(--accent); }
+.c-ico {
+  flex: none; width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center;
+  background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent-2);
+}
+.c-ico .ico { width: 20px; height: 20px; vertical-align: 0; }
+.c-item div { min-width: 0; }
+.c-item b { display: block; font-size: 0.95rem; }
+.c-item small { color: var(--muted); overflow-wrap: anywhere; }
+.form { display: flex; flex-direction: column; gap: 16px; }
+.form:hover { transform: none; }
+.form label { display: flex; flex-direction: column; gap: 6px; font-size: 0.88rem; color: var(--muted); }
+.form input, .form textarea {
+  width: 100%; font-family: inherit; font-size: 0.95rem; padding: 12px 14px; border-radius: 12px;
+  background: var(--bg); border: 1px solid var(--card-border); color: var(--text); outline: none; resize: vertical;
+  transition: border-color 0.2s;
+}
+.form input:focus, .form textarea:focus { border-color: var(--accent); }
+.form-note { font-size: 0.85rem; color: var(--accent-2); min-height: 1.2em; }
+
+/* FOOTER */
+.footer { text-align: center; padding: 30px 4%; color: var(--muted); font-size: 0.88rem; border-top: 1px solid var(--card-border); }
+.to-top {
+  position: fixed; right: 22px; bottom: 22px; width: 46px; height: 46px; border-radius: 14px; border: none; cursor: pointer;
+  display: grid; place-items: center;
+  background: var(--grad); color: #fff; box-shadow: var(--shadow);
+  opacity: 0; pointer-events: none; transform: translateY(20px); transition: all 0.3s;
+}
+.to-top .ico { width: 20px; height: 20px; vertical-align: 0; }
+.to-top.show { opacity: 1; pointer-events: auto; transform: none; }
+
+/* REVEAL */
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: none; }
+.reveal.done { transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s; }
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 860px) {
+  .menu-btn { display: inline-grid; }
+  .nav-links {
+    position: fixed; top: 64px; left: 4%; right: 4%; flex-direction: column; gap: 4px; padding: 14px;
+    background: var(--card); border: 1px solid var(--card-border); border-radius: 18px; box-shadow: var(--shadow);
+    transform: translateY(-20px); opacity: 0; pointer-events: none; transition: all 0.25s;
+  }
+  .nav-links.open { transform: none; opacity: 1; pointer-events: auto; }
+  .nav-links a { padding: 10px 14px; }
+  .about-grid, .edu-layout, .contact-grid, .cv-grid { grid-template-columns: minmax(0, 1fr); }
+  .info-list { grid-template-columns: minmax(0, 1fr); }
+  .section { padding: 75px 0; }
+  .cv-compact { flex-direction: column; text-align: center; }
+}
+@media (max-width: 480px) {
+  .card { padding: 20px; }
+  .project { padding: 0; }
+  .p-body { padding: 18px 18px 20px; }
+  .timeline { padding-left: 28px; }
+  .tl-dot { left: -28px; }
+  .lang-box { padding: 22px; }
+  .btn { width: 100%; }
+  .hero-btns { flex-direction: column; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+  .reveal { opacity: 1; transform: none; }
+}
+</style>
+<script>
+  // ====================================================================
+//  LIENS DES PROJETS
+// ====================================================================
+const PROJECT_LINKS = {
+  cabinet:      { git: "https://github.com/khawla858/Medical_Spring-boot.git", demo: "https://lnkd.in/p/em5p8ihV" },
+  microservices:{ git: "https://github.com/khawla858/Microservice_Spring-boot.git", demo: "" },
+  vehicules:    { git: "https://github.com/khawla858/vehiclegestion_Javafx.git", demo: "https://lnkd.in/p/eWm469ET" },
+  multimedia:   { git: "https://github.com/khawla858/Python_projet_preparation_donn-es-.git", demo: "" },
+  faciale:      { git: "https://github.com/khawla858", demo: "" },
+  affectation:  { git: "https://github.com/khawla858/Web_enseignement.git", demo: "" },
+  entreprise:   { git: "https://github.com/khawla858", demo: "" },
+  conges:       { git: "https://github.com/khawla858", demo: "" }
+};
+
+// ====================================================================
+//  IMAGES DES PROJETS
+// ====================================================================
+const PROJECT_IMAGES = {
+  cabinet: "images/img cabinet medc.jpg",
+  faciale: "images/enrollment.jpg"
+};
+
+document.querySelectorAll(".project").forEach(card => {
+  const path = PROJECT_IMAGES[card.dataset.project];
+  const img = card.querySelector(".p-media img");
+  if (!path || !img) return;
+  const probe = new Image();
+  probe.onload = () => { img.src = probe.src; img.removeAttribute("width"); img.removeAttribute("height"); };
+  probe.src = encodeURI(path);
+});
+
+document.querySelectorAll(".project").forEach(card => {
+  const cfg = PROJECT_LINKS[card.dataset.project] || {};
+  card.querySelectorAll("[data-link]").forEach(a => {
+    const url = cfg[a.dataset.link];
+    if (url) a.href = url;
+    else a.style.display = "none";
+  });
+});
+
+// ============ THEME ============
+const root = document.documentElement;
+const themeBtn = document.getElementById("theme-toggle");
+const themeIco = document.getElementById("theme-ico");
+
+function applyTheme(t) {
+  root.setAttribute("data-theme", t);
+  if (themeIco) themeIco.setAttribute("href", t === "dark" ? "#i-moon" : "#i-sun");
+  try { localStorage.setItem("theme", t); } catch (e) {}
+}
+let saved = null;
+try { saved = localStorage.getItem("theme"); } catch (e) {}
+if (themeBtn) {
+  applyTheme(saved || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"));
+  themeBtn.addEventListener("click", () => {
+    applyTheme(root.getAttribute("data-theme") === "dark" ? "light" : "dark");
+  });
+}
+
+// ============ NAVBAR ============
+const navbar = document.getElementById("navbar");
+const navLinks = document.getElementById("nav-links");
+const menuBtn = document.getElementById("menu-toggle");
+const toTop = document.getElementById("to-top");
+
+if (menuBtn) menuBtn.addEventListener("click", () => navLinks.classList.toggle("open"));
+navLinks.querySelectorAll("a").forEach(a => a.addEventListener("click", () => navLinks.classList.remove("open")));
+
+window.addEventListener("scroll", () => {
+  navbar.classList.toggle("scrolled", window.scrollY > 40);
+  toTop.classList.toggle("show", window.scrollY > 500);
+});
+if (toTop) toTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+// Lien actif selon la section visible
+const sections = document.querySelectorAll("main section[id]");
+const links = navLinks.querySelectorAll("a");
+const spy = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(l => l.classList.toggle("active", l.getAttribute("href") === "#" + e.target.id));
+    }
+  });
+}, { rootMargin: "-45% 0px -50% 0px" });
+sections.forEach(s => spy.observe(s));
+
+// ============ EFFET DE FRAPPE ============
+const phrases = {
+  fr: [
+    "Élève ingénieure en Génie Informatique",
+    "Développeuse Full-Stack",
+    "Passionnée par Java & Spring Boot",
+    "En recherche d'un stage PFE · Février 2027"
+  ],
+  en: [
+    "Computer Engineering Student",
+    "Full-Stack Developer",
+    "Passionate about Java & Spring Boot",
+    "Looking for a PFE internship · February 2027"
+  ]
+};
+const typed = document.getElementById("typed");
+let pi = 0, ci = 0, deleting = false;
+let currentLang = "fr";
+
+function type() {
+  const word = phrases[currentLang][pi];
+  typed.textContent = word.substring(0, ci);
+  if (!deleting && ci < word.length) { ci++; setTimeout(type, 55); }
+  else if (!deleting) { deleting = true; setTimeout(type, 1600); }
+  else if (ci > 0) { ci--; setTimeout(type, 28); }
+  else { deleting = false; pi = (pi + 1) % phrases[currentLang].length; setTimeout(type, 350); }
+}
+if (typed) type();
+
+// ============ APPARITION + COMPTEURS + BARRES DE LANGUES ============
+function countUp(el) {
+  const target = +el.dataset.count;
+  let n = 0;
+  const step = Math.max(1, Math.ceil(target / 30));
+  const t = setInterval(() => {
+    n += step;
+    if (n >= target) { n = target; clearInterval(t); }
+    el.textContent = n + (target >= 5 ? "+" : "");
+  }, 45);
+}
+
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (!e.isIntersecting) return;
+    const el = e.target;
+    el.classList.add("visible");
+    el.querySelectorAll("[data-count]").forEach(countUp);
+    el.querySelectorAll(".bar i").forEach(b => (b.style.width = b.dataset.w + "%"));
+    setTimeout(() => { el.style.transitionDelay = ""; el.classList.add("done"); }, 1000);
+    revealObs.unobserve(el);
+  });
+}, { threshold: 0.12 });
+document.querySelectorAll(".reveal").forEach((el, i) => {
+  el.style.transitionDelay = (i % 4) * 80 + "ms";
+  revealObs.observe(el);
+});
+
+// ============ FILTRE DES PROJETS ============
+const filters = document.querySelectorAll(".filter");
+const projects = document.querySelectorAll(".project");
+filters.forEach(btn => {
+  btn.addEventListener("click", () => {
+    filters.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    const f = btn.dataset.filter;
+    projects.forEach(p => p.classList.toggle("hide", f !== "all" && p.dataset.cat !== f));
+  });
+});
+
+// ============ AGRANDIR LES IMAGES DES PROJETS ============
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = lightbox.querySelector("img");
+document.querySelectorAll(".p-media img").forEach(img => {
+  img.addEventListener("click", () => {
+    lightboxImg.src = img.currentSrc || img.src;
+    lightboxImg.alt = img.alt;
+    lightbox.hidden = false;
+  });
+});
+lightbox.addEventListener("click", () => { lightbox.hidden = true; });
+document.addEventListener("keydown", e => { if (e.key === "Escape") lightbox.hidden = true; });
+
+// ============ ANNÉE DU FOOTER ============
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// ====================================================================
+//  TRADUCTION FR / EN (COMPLET)
+// ====================================================================
+const translations = {
+  fr: {
+    // Navbar
+    "nav-about": "À propos",
+    "nav-experience": "Expérience",
+    "nav-projects": "Projets",
+    "nav-skills": "Compétences",
+    "nav-education": "Formation",
+    "nav-cv": "CV",
+    "nav-contact": "Contact",
+    // Hero
+    "hero-badge": "Disponible pour un stage PFE — Février 2027",
+    "hero-title": "Bonjour, je suis",
+    "hero-lead": "Élève ingénieure en Génie Informatique, passionnée par la conception et le développement d'applications web et mobile. À la recherche d'un stage PFE de 6 mois.",
+    "hero-btn-projects": "Voir mes projets",
+    "hero-btn-cv": "Voir mon CV",
+    "hero-btn-contact": "Me contacter",
+    // About
+    "about-title": "À propos de moi",
+    "about-p1": "Étudiante en Génie Informatique, spécialisée en Génie Logiciel et développement Full-Stack. J'aime concevoir des applications web et mobile robustes, avec des compétences en Java, Spring Boot, API REST, Python, Next.js et bases de données.",
+    "about-p2": "Mes compétences ont été acquises à travers plusieurs projets académiques et une expérience pratique en entreprise. Je cherche aujourd'hui un stage PFE de 6 mois à partir de Février 2027 pour contribuer à des projets logiciels concrets.",
+    "info-loc": "Localisation",
+    "info-loc-val": "Maroc",
+    "info-email": "Email",
+    "info-phone": "Téléphone",
+    "info-objective": "Objectif",
+    "info-objective-val": "Stage PFE · 6 mois",
+    // Experience
+    "experience-title": "Expérience professionnelle",
+    "exp1-date": "Juin 2025 — Août 2025",
+    "exp1-title": "Stagiaire Développeuse Frontend (Next.js)",
+    "exp1-company": "NichanLabs, Errachidia",
+    "exp1-li1": "Participation au développement d'une plateforme de gestion scolaire au sein d'une équipe projet.",
+    "exp1-li2": "Développement de l'interface utilisateur avec Next.js et Tailwind CSS.",
+    "exp1-li3": "Intégration des API REST développées avec NestJS et connectées à une base de données MongoDB.",
+    "exp1-li4": "Collaboration avec GitHub (versionnement), Jira (suivi des tâches) et Postman (tests des API).",
+    // Projects
+    "projects-title": "Mes projets",
+    "filter-all": "Tous",
+    "filter-web": "Web / Backend",
+    "filter-desktop": "Desktop",
+    "filter-ai": "IA / Python",
+    "cat-web": "Web / Backend",
+    "cat-desktop": "Desktop",
+    "cat-ai": "IA / Python",
+    "proj1-title": "Gestion d'un cabinet médical",
+    "proj1-desc": "Gestion des patients, médecins et dossiers médicaux, avec un système de demandes de consultation validées ou refusées par l'administration. API REST sécurisée.",
+    "proj2-title": "Application en microservices",
+    "proj2-desc": "Application décomposée en plusieurs microservices indépendants, communiquant via API REST, avec une séparation claire des responsabilités et des données.",
+    "proj3-title": "Gestion et vente de véhicules",
+    "proj3-desc": "Application desktop JavaFX de gestion des véhicules, clients et ventes. Recherche avancée, visualisation des données et logs avec Elasticsearch et Kibana.",
+    "proj4-title": "Analyse multimédia intelligente",
+    "proj4-desc": "Analyse de vidéos YouTube et de contenus académiques, avec génération de résumés (texte et images clés).",
+    "proj5-title": "Affectation des unités d'enseignement",
+    "proj5-desc": "Application web de gestion des unités d'enseignement et des affectations des professeurs.",
+    "link-git": "Code source",
+    "link-demo": "Démo live",
+    "github-all": "Voir tous mes dépôts sur GitHub",
+    // Skills
+    "skills-title": "Compétences techniques",
+    "skill-lang": "Langages",
+    "skill-fw": "Frameworks",
+    "skill-db": "Bases de données",
+    "skill-search": "Recherche & visualisation",
+    "skill-tools": "Outils & technologies",
+    "skill-dom": "Domaines",
+    "skills-trans": "Compétences transversales",
+    "dom1": "Génie logiciel",
+    "trans1": "Gestion de projet",
+    "trans2": "Travail en équipe",
+    "trans3": "Résolution de problèmes",
+    "trans4": "Esprit critique",
+    // Education
+    "education-title": "Formation & langues",
+    "edu1-title": "Cycle d'ingénieur — Génie Informatique",
+    "edu1-company": "École Nationale des Sciences Appliquées d'Al Hoceima, Maroc",
+    "edu2-title": "Cycle préparatoire intégré",
+    "edu2-company": "École Nationale des Sciences Appliquées d'Al Hoceima, Maroc",
+    "edu3-title": "Baccalauréat — Sciences Mathématiques A (option français)",
+    "edu3-company": "Lycée Salah Eddine El Ayoubi, Tinghir, Maroc",
+    "lang-title": "Langues",
+    "lang-ar": "Arabe",
+    "lang-ar-lvl": "Langue maternelle",
+    "lang-fr": "Français",
+    "lang-fr-lvl": "Courant",
+    "lang-en": "Anglais",
+    "lang-en-lvl": "Intermédiaire (B1/B2)",
+    "interests-title": "Centres d'intérêt",
+    "int1": "Projets personnels de développement",
+    "int2": "Lecture",
+    "int3": "Sport",
+    // CV
+    "cv-title": "Mon CV",
+    "cv-desc": "Élève ingénieure en Génie Informatique · Stage PFE de 6 mois dès Février 2027.",
+    "cv-download": "Télécharger",
+    // Contact
+    "contact-title": "Me contacter",
+    "contact-lead": "Un projet, une opportunité de stage PFE ou juste envie d'échanger ? Écrivez-moi !",
+    "contact-email": "Email",
+    "contact-phone": "Téléphone",
+    // Footer
+    "footer-text": "Conçu avec HTML, CSS & JavaScript"
+  },
+  en: {
+    // Navbar
+    "nav-about": "About",
+    "nav-experience": "Experience",
+    "nav-projects": "Projects",
+    "nav-skills": "Skills",
+    "nav-education": "Education",
+    "nav-cv": "CV",
+    "nav-contact": "Contact",
+    // Hero
+    "hero-badge": "Available for a PFE internship — February 2027",
+    "hero-title": "Hello, I am",
+    "hero-lead": "Computer Engineering student, passionate about designing and developing web and mobile applications. Looking for a 6-month PFE internship.",
+    "hero-btn-projects": "View my projects",
+    "hero-btn-cv": "View my CV",
+    "hero-btn-contact": "Contact me",
+    // About
+    "about-title": "About me",
+    "about-p1": "Computer Engineering student, specialized in Software Engineering and Full-Stack development. I enjoy designing robust web and mobile applications, with skills in Java, Spring Boot, REST API, Python, Next.js and databases.",
+    "about-p2": "My skills were acquired through several academic projects and a practical experience in a company. I am currently looking for a 6-month PFE internship starting February 2027 to contribute to concrete software projects.",
+    "info-loc": "Location",
+    "info-loc-val": "Morocco",
+    "info-email": "Email",
+    "info-phone": "Phone",
+    "info-objective": "Goal",
+    "info-objective-val": "PFE Internship · 6 months",
+    // Experience
+    "experience-title": "Professional Experience",
+    "exp1-date": "June 2025 — August 2025",
+    "exp1-title": "Frontend Developer Intern (Next.js)",
+    "exp1-company": "NichanLabs, Errachidia",
+    "exp1-li1": "Participated in the development of a school management platform within a project team.",
+    "exp1-li2": "Developed the user interface with Next.js and Tailwind CSS.",
+    "exp1-li3": "Integrated REST APIs built with NestJS and connected to a MongoDB database.",
+    "exp1-li4": "Collaborated with GitHub (versioning), Jira (task tracking) and Postman (API testing).",
+    // Projects
+    "projects-title": "My Projects",
+    "filter-all": "All",
+    "filter-web": "Web / Backend",
+    "filter-desktop": "Desktop",
+    "filter-ai": "AI / Python",
+    "cat-web": "Web / Backend",
+    "cat-desktop": "Desktop",
+    "cat-ai": "AI / Python",
+    "proj1-title": "Medical Office Management",
+    "proj1-desc": "Management of patients, doctors and medical records, with a consultation request system validated or refused by the administration. Secure REST API.",
+    "proj2-title": "Microservices Application",
+    "proj2-desc": "Application decomposed into several independent microservices, communicating via REST API, with a clear separation of responsibilities and data.",
+    "proj3-title": "Vehicle Management and Sales",
+    "proj3-desc": "JavaFX desktop application for managing vehicles, customers and sales. Advanced search, data visualization and logs with Elasticsearch and Kibana.",
+    "proj4-title": "Intelligent Multimedia Analysis",
+    "proj4-desc": "Analysis of YouTube videos and academic content, with generation of summaries (text and key images).",
+    "proj5-title": "Teaching Units Assignment",
+    "proj5-desc": "Web application for managing teaching units and teacher assignments.",
+    "link-git": "Source code",
+    "link-demo": "Live demo",
+    "github-all": "View all my repositories on GitHub",
+    // Skills
+    "skills-title": "Technical Skills",
+    "skill-lang": "Languages",
+    "skill-fw": "Frameworks",
+    "skill-db": "Databases",
+    "skill-search": "Search & visualization",
+    "skill-tools": "Tools & technologies",
+    "skill-dom": "Domains",
+    "skills-trans": "Soft Skills",
+    "dom1": "Software Engineering",
+    "trans1": "Project management",
+    "trans2": "Teamwork",
+    "trans3": "Problem solving",
+    "trans4": "Critical thinking",
+    // Education
+    "education-title": "Education & Languages",
+    "edu1-title": "Engineering Cycle — Computer Science",
+    "edu1-company": "National School of Applied Sciences of Al Hoceima, Morocco",
+    "edu2-title": "Integrated Preparatory Cycle",
+    "edu2-company": "National School of Applied Sciences of Al Hoceima, Morocco",
+    "edu3-title": "Baccalaureate — Mathematical Sciences A (French option)",
+    "edu3-company": "Salah Eddine El Ayoubi High School, Tinghir, Morocco",
+    "lang-title": "Languages",
+    "lang-ar": "Arabic",
+    "lang-ar-lvl": "Native language",
+    "lang-fr": "French",
+    "lang-fr-lvl": "Fluent",
+    "lang-en": "English",
+    "lang-en-lvl": "Intermediate (B1/B2)",
+    "interests-title": "Interests",
+    "int1": "Personal development projects",
+    "int2": "Reading",
+    "int3": "Sports",
+    // CV
+    "cv-title": "My CV",
+    "cv-desc": "Computer Engineering student · 6-month PFE internship from February 2027.",
+    "cv-download": "Download",
+    // Contact
+    "contact-title": "Contact me",
+    "contact-lead": "A project, a PFE internship opportunity or just want to chat? Write to me!",
+    "contact-email": "Email",
+    "contact-phone": "Phone",
+    // Footer
+    "footer-text": "Built with HTML, CSS & JavaScript"
+  }
+};
+
+const langBtn = document.getElementById("lang-toggle");
+const langText = document.getElementById("lang-text");
+
+function applyLang(lang) {
+  currentLang = lang;
+  if (langText) langText.textContent = lang.toUpperCase();
+  document.documentElement.lang = lang;
+
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.dataset.i18n;
+    if (translations[lang][key]) {
+      if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+        el.placeholder = translations[lang][key];
+      } else {
+        el.innerHTML = translations[lang][key];
+      }
+    }
+  });
+
+  try { localStorage.setItem("lang", lang); } catch(e) {}
+
+  // Redémarrer la frappe
+  pi = 0; ci = 0; deleting = false;
+}
+
+if (langBtn) {
+  langBtn.addEventListener("click", () => {
+    applyLang(currentLang === "fr" ? "en" : "fr");
+  });
+}
+
+// Charger la langue sauvegardée
+try {
+  const savedLang = localStorage.getItem("lang");
+  if (savedLang && (savedLang === "fr" || savedLang === "en")) {
+    applyLang(savedLang);
+  }
+} catch(e) {}
+</script>
