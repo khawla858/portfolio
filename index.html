@@ -101,27 +101,36 @@
 
     <!-- EXPERIENCE -->
     <section id="experience" class="section alt">
-      <div class="container">
-        <h3 class="section-title reveal" data-i18n="experience-title">Expérience <span class="grad">professionnelle</span></h3>
-        <div class="timeline">
-          <div class="tl-item reveal">
-            <div class="tl-dot"></div>
-            <div class="card">
+  <div class="container">
+    <h3 class="section-title reveal" data-i18n="experience-title">Expérience <span class="grad">professionnelle</span></h3>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="card">
+          
+          <!-- Hna fin drna l'flex -->
+          <div class="exp-header">
+            <img src="images/Nichanlabs logo.jpg" alt="Logo NichanLabs" class="exp-logo" />
+            <div class="exp-info">
               <span class="date" data-i18n="exp1-date">Juin 2025 — Août 2025</span>
               <h4 data-i18n="exp1-title">Stagiaire Développeuse Frontend (Next.js)</h4>
               <p class="company" data-i18n="exp1-company">NichanLabs, Errachidia</p>
-              <ul>
-                <li data-i18n="exp1-li1">Participation au développement d'une plateforme de gestion scolaire au sein d'une équipe projet.</li>
-                <li data-i18n="exp1-li2">Développement de l'interface utilisateur avec Next.js et Tailwind CSS.</li>
-                <li data-i18n="exp1-li3">Intégration des API REST développées avec NestJS et connectées à une base de données MongoDB.</li>
-                <li data-i18n="exp1-li4">Collaboration avec GitHub (versionnement), Jira (suivi des tâches) et Postman (tests des API).</li>
-              </ul>
-              <div class="tags"><span>Next.js</span><span>Tailwind CSS</span><span>NestJS</span><span>MongoDB</span><span>Jira</span></div>
             </div>
           </div>
+
+          <ul>
+            <li data-i18n="exp1-li1">Participation au développement d'une plateforme de gestion scolaire au sein d'une équipe projet.</li>
+            <li data-i18n="exp1-li2">Développement des interfaces des utilisateurs avec Next.js et Tailwind CSS.</li>
+            <li data-i18n="exp1-li3">Intégration des API REST développées avec NestJS et connectées à une base de données MongoDB.</li>
+            <li data-i18n="exp1-li4">Collaboration avec GitHub (versionnement), Jira (suivi des tâches) et Postman (tests des API).</li>
+          </ul>
+          <div class="tags"><span>Next.js</span><span>Tailwind CSS</span><span>NestJS</span><span>MongoDB</span><span>Postman</span><span>GitHub</span><span>Jira</span></div>
         </div>
       </div>
-    </section>
+    </div>
+    
+  </div>
+</section>
 
     <!-- PROJECTS -->
     <section id="projects" class="section">
@@ -145,7 +154,7 @@
             <div class="p-body">
               <h4 data-i18n="proj1-title">Gestion d'un cabinet médical</h4>
               <p data-i18n="proj1-desc">Gestion des patients, médecins et dossiers médicaux, avec un système de demandes de consultation validées ou refusées par l'administration. API REST sécurisée.</p>
-              <div class="tags"><span>Spring Boot</span><span>MySQL</span><span>API REST</span></div>
+              <div class="tags"><span>Spring Boot</span><span>MySQL</span><span>API REST</span><span>Javascript</span><span>Html , CSS</span></div>
               <div class="p-links">
                 <a class="p-link" data-link="git" target="_blank" rel="noopener"><svg class="ico"><use href="https://github.com/khawla858/Medical_Spring-boot.git"/></svg> <span data-i18n="link-git">Code source</span></a>
                 <a class="p-link demo" data-link="demo" target="_blank" rel="noopener"><svg class="ico"><use href="https://lnkd.in/p/em5p8ihV"/></svg> <span data-i18n="link-demo">Démo live</span></a>
@@ -237,7 +246,7 @@
           </div>
           <div class="card skill-card reveal">
             <h4 data-i18n="skill-fw">Frameworks</h4>
-            <div class="tags big"><span>Spring Boot</span><span>React.js</span><span>Next.js</span><span>Flask</span><span>Bootstrap</span><span>Tailwind CSS</span></div>
+            <div class="tags big"><span>Spring Boot</span><span>React.js</span><span>Next.js</span><span>Angular</span><span>Flask</span><span>Bootstrap</span><span>Tailwind CSS</span></div>
           </div>
           <div class="card skill-card reveal">
             <h4 data-i18n="skill-db">Bases de données</h4>
@@ -373,6 +382,34 @@
   --grad: linear-gradient(135deg, #8b5cf6, #22d3ee);
   --shadow: 0 10px 40px rgba(0, 0, 0, 0.35);
   --radius: 18px;
+}
+/* Experience Header */
+/* Experience Header */
+.exp-header {
+  display: flex;
+  gap: 16px;
+  align-items: center; /* Kaymarkezi l'logo m3a l'texte */
+  margin-bottom: 14px;
+}
+
+.exp-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 10px;
+  border: 1px solid var(--card-border);
+  background: #fff;
+  padding: 4px;
+  flex: none; /* Bach l'logo ma ytqellech */
+}
+
+.exp-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.exp-info h4 {
+  margin: 4px 0;
 }
 
 [data-theme="light"] {
@@ -906,7 +943,7 @@ const translations = {
     "exp1-title": "Stagiaire Développeuse Frontend (Next.js)",
     "exp1-company": "NichanLabs, Errachidia",
     "exp1-li1": "Participation au développement d'une plateforme de gestion scolaire au sein d'une équipe projet.",
-    "exp1-li2": "Développement de l'interface utilisateur avec Next.js et Tailwind CSS.",
+    "exp1-li2": "Développement des interfaces des utilisateurs avec Next.js et Tailwind CSS.",
     "exp1-li3": "Intégration des API REST développées avec NestJS et connectées à une base de données MongoDB.",
     "exp1-li4": "Collaboration avec GitHub (versionnement), Jira (suivi des tâches) et Postman (tests des API).",
     // Projects
@@ -920,7 +957,7 @@ const translations = {
     "cat-ai": "IA / Python",
     "proj1-title": "Gestion d'un cabinet médical",
     "proj1-desc": "Gestion des patients, médecins et dossiers médicaux, avec un système de demandes de consultation validées ou refusées par l'administration. API REST sécurisée.",
-    "proj2-title": "Application en microservices",
+    "proj2-title": "AcadémIA — Système d'inscription en microservices",
     "proj2-desc": "Application décomposée en plusieurs microservices indépendants, communiquant via API REST, avec une séparation claire des responsabilités et des données.",
     "proj3-title": "Gestion et vente de véhicules",
     "proj3-desc": "Application desktop JavaFX de gestion des véhicules, clients et ventes. Recherche avancée, visualisation des données et logs avec Elasticsearch et Kibana.",
