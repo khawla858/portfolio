@@ -142,6 +142,8 @@
           <button class="filter" data-filter="web" data-i18n="filter-web">Web / Backend</button>
           <button class="filter" data-filter="desktop" data-i18n="filter-desktop">Desktop</button>
           <button class="filter" data-filter="ai" data-i18n="filter-ai">IA / Python</button>
+            <button class="filter" data-filter="robot" data-i18n="filter-robot">Robotique</button>
+
         </div>
 
         <div class="projects-grid">
@@ -227,6 +229,29 @@
 <a class="p-link demo" href="images/WhatsApp Video 2026-10-13 at 20.16.50.mp4" target="_blank" rel="noopener"><svg class="ico"><use href="#i-external"/></svg> <span data-i18n="link-demo">Voir la vidéo</span></a>              </div>
             </div>
           </article>
+
+          <!-- Projet 6: Robot suiveur de ligne -->
+<article class="card project reveal" data-cat="robot" data-project="robot">
+  <div class="p-media">
+    <img src="images/imge robot2.jpg" alt="Aperçu du projet Robot suiveur de ligne" width="800" height="500" loading="lazy" />
+    <span class="p-cat" data-i18n="cat-robot">Robotique</span>
+  </div>
+  <div class="p-body">
+    <h4 data-i18n="proj6-title">Robot suiveur de ligne</h4>
+    <p data-i18n="proj6-desc">
+      Projet enrichissant réalisé dans le cadre du module de robotique, portant sur la conception d'un robot capable de détecter et suivre une ligne noire à l'aide de capteurs.
+    </p>
+    <div class="tags">
+      <span>Arduino</span><span>C++</span><span>Capteurs IR</span><span>L298N</span>
+    </div>
+    <div class="p-links">
+  <a class="p-link demo" data-link="demo" target="_blank" rel="noopener">
+    <svg class="ico"><use href="#i-external"/></svg> 
+    <span data-i18n="link-demo">Voir le projet</span>
+  </a>
+</div>
+  </div>
+</article>
         </div>
 
         <div class="center reveal">
@@ -741,13 +766,15 @@ img { display: block; max-width: 100%; }
 // ====================================================================
 const PROJECT_LINKS = {
   cabinet:      { git: "https://github.com/khawla858/Medical_Spring-boot.git", demo: "https://lnkd.in/p/em5p8ihV" },
-  microservices:{ git: "https://github.com/khawla858/Microservice_Spring-boot.git", demo: "" },
+  microservices:{ git: "https://github.com/khawla858/Microservice_Spring-boot.git", demo: "https://www.linkedin.com/in/khawla-sidi-220055310/details/projects/" },
   vehicules:    { git: "https://github.com/khawla858/vehiclegestion_Javafx.git", demo: "https://lnkd.in/p/eWm469ET" },
   multimedia:   { git: "https://github.com/khawla858/Python_projet_preparation_donn-es-.git", demo: "" },
   faciale:      { git: "https://github.com/khawla858", demo: "" },
   affectation:  { git: "https://github.com/khawla858/Web_enseignement.git", demo: "" },
   entreprise:   { git: "https://github.com/khawla858", demo: "" },
-  conges:       { git: "https://github.com/khawla858", demo: "" }
+  conges:       { git: "https://github.com/khawla858", demo: "" },
+  robot:        { git: "", demo: "https://lnkd.in/p/eFa2vn5A" } // Hna zidna l'lien
+
 };
 
 // ====================================================================
@@ -968,6 +995,12 @@ const translations = {
     "link-git": "Code source",
     "link-demo": "Démo live",
     "github-all": "Voir tous mes dépôts sur GitHub",
+    // Robotique
+"filter-robot": "Robotique",
+"cat-robot": "Robotique",
+"proj6-title": "Robot suiveur de ligne",
+"proj6-desc": "Projet enrichissant réalisé dans le cadre du module de robotique, portant sur la conception d'un robot capable de détecter et suivre une ligne noire à l'aide de capteurs.",
+"link-project": "Voir le projet",
     // Skills
     "skills-title": "Compétences techniques",
     "skill-lang": "Langages",
@@ -996,7 +1029,7 @@ const translations = {
     "lang-fr": "Français",
     "lang-fr-lvl": "Courant",
     "lang-en": "Anglais",
-    "lang-en-lvl": "Intermédiaire (B1/B2)",
+    "lang-en-lvl": "Intermédiaire ",
     "interests-title": "Centres d'intérêt",
     "int1": "Projets personnels de développement",
     "int2": "Lecture",
@@ -1112,6 +1145,12 @@ const translations = {
     "contact-lead": "A project, a PFE internship opportunity or just want to chat? Write to me!",
     "contact-email": "Email",
     "contact-phone": "Phone",
+    // Robotics
+"filter-robot": "Robotics",
+"cat-robot": "Robotics",
+"proj6-title": "Line Following Robot",
+"proj6-desc": "Enriching project carried out as part of the robotics module, focusing on the design of a robot capable of detecting and following a black line using sensors.",
+"link-project": "View project",
     // Footer
     "footer-text": "Built with HTML, CSS & JavaScript"
   }
