@@ -5,396 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Khaoula Sidi | Élève ingénieure en Génie Informatique</title>
   <meta name="description" content="Portfolio de Khaoula Sidi, élève ingénieure en Génie Informatique, développement Full-Stack. À la recherche d'un stage PFE de 6 mois à partir de Février 2027." />
+  <meta name="theme-color" content="#0b0f1a" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Khaoula Sidi | Élève ingénieure en Génie Informatique" />
+  <meta property="og:description" content="Portfolio de Khaoula Sidi, développement Full-Stack. À la recherche d'un stage PFE de 6 mois à partir de Février 2027." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b0f1a'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='30' text-anchor='middle' fill='%2322d3ee'%3EKS%3C/text%3E%3C/svg%3E" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-
-  <!-- ICONES SVG (sprite) -->
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></symbol>
-    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
-    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
-    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
-    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
-    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
-    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
-    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
-    <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></symbol>
-    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8M8 9h2"/></symbol>
-    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
-    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
-    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
-  </svg>
-
-  <!-- NAVBAR -->
-  <header class="navbar" id="navbar">
-    <a href="#home" class="logo">KS<span>.</span></a>
-    <nav id="nav-links" class="nav-links">
-      <a href="#about" data-i18n="nav-about">À propos</a>
-      <a href="#experience" data-i18n="nav-experience">Expérience</a>
-      <a href="#projects" data-i18n="nav-projects">Projets</a>
-      <a href="#skills" data-i18n="nav-skills">Compétences</a>
-      <a href="#education" data-i18n="nav-education">Formation</a>
-      <a href="#cv" data-i18n="nav-cv">CV</a>
-      <a href="#contact" data-i18n="nav-contact">Contact</a>
-    </nav>
-    <div class="nav-actions">
-      <button id="lang-toggle" class="icon-btn lang-btn" aria-label="Changer de langue"><span id="lang-text">FR</span></button>
-      <button id="menu-toggle" class="icon-btn menu-btn" aria-label="Menu"><svg class="ico"><use href="#i-menu"/></svg></button>
-    </div>
-  </header>
-
-  <main>
-    <!-- HERO -->
-    <section id="home" class="hero">
-      <div class="blob blob1"></div>
-      <div class="blob blob2"></div>
-      <div class="container hero-inner">
-        <p class="badge reveal"><span class="dot"></span> <span data-i18n="hero-badge">Disponible pour un stage PFE — Février 2027</span></p>
-        <h1 class="reveal"><span data-i18n="hero-title">Bonjour, je suis</span> <span class="grad">Khaoula Sidi</span></h1>
-        <h2 class="reveal"><span id="typed"></span><span class="cursor">|</span></h2>
-        <p class="lead reveal" data-i18n="hero-lead">
-          Élève ingénieure en Génie Informatique, passionnée par la conception et le développement
-          d'applications web et mobile. À la recherche d'un stage PFE de  6 mois.
-        </p>
-        <div class="hero-btns reveal">
-          <a href="#projects" class="btn primary" data-i18n="hero-btn-projects">Voir mes projets</a>
-          <a href="#cv" class="btn ghost"><svg class="ico"><use href="#i-file"/></svg> <span data-i18n="hero-btn-cv">Voir mon CV</span></a>
-          <a href="#contact" class="btn ghost" data-i18n="hero-btn-contact">Me contacter</a>
-        </div>
-        <div class="socials reveal">
-          <a href="https://github.com/khawla858" target="_blank" rel="noopener"><svg class="ico"><use href="#i-github"/></svg> GitHub</a>
-          <a href="https://linkedin.com/in/khawla-sidi" target="_blank" rel="noopener"><svg class="ico"><use href="#i-linkedin"/></svg> LinkedIn</a>
-<a href="https://mail.google.com/mail/?view=cm&fs=1&to=khaoula192004@gmail.com&su=Opportunit%C3%A9%20de%20stage%20PFE" target="_blank" rel="noopener"><svg class="ico"><use href="#i-mail"/></svg> Email</a>        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="container">
-        <h3 class="section-title reveal" data-i18n="about-title">À propos de <span class="grad">moi</span></h3>
-        <div class="about-grid">
-          <div class="about-text reveal">
-            <p data-i18n="about-p1">
-              Étudiante en <strong>Génie Informatique</strong>, spécialisée en <strong>Génie Logiciel</strong>
-              et développement <strong>Full-Stack</strong>. J'aime concevoir des applications web et mobile
-              robustes, avec des compétences en Java, Spring Boot, API REST, Python, Next.js et bases de données.
-            </p>
-            <p data-i18n="about-p2">
-              Mes compétences ont été acquises à travers plusieurs projets académiques et une expérience
-              pratique en entreprise. Je cherche aujourd'hui un <strong>stage PFE de 6 mois à partir de
-              Février 2027</strong> pour contribuer à des projets logiciels concrets.
-            </p>
-            <div class="info-list">
-              <div><span><svg class="ico"><use href="#i-pin"/></svg> <span data-i18n="info-loc">Localisation</span></span> <span data-i18n="info-loc-val">Maroc</span></div>
-              <div><span><svg class="ico"><use href="#i-mail"/></svg> <span data-i18n="info-email">Email</span></span> khaoula192004@gmail.com</div>
-              <div><span><svg class="ico"><use href="#i-phone"/></svg> <span data-i18n="info-phone">Téléphone</span></span> +212 6 18 98 84 66</div>
-              <div><span><svg class="ico"><use href="#i-briefcase"/></svg> <span data-i18n="info-objective">Objectif</span></span> <span data-i18n="info-objective-val">Stage PFE · 6 mois</span></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section alt">
-  <div class="container">
-    <h3 class="section-title reveal" data-i18n="experience-title">Expérience <span class="grad">professionnelle</span></h3>
-    <div class="timeline">
-      <div class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="card">
-          
-          <!-- Hna fin drna l'flex -->
-          <div class="exp-header">
-            <img src="images/Nichanlabs logo.jpg" alt="Logo NichanLabs" class="exp-logo" />
-            <div class="exp-info">
-              <span class="date" data-i18n="exp1-date">Juin 2025 — Août 2025</span>
-              <h4 data-i18n="exp1-title">Stagiaire Développeuse Frontend (Next.js)</h4>
-              <p class="company" data-i18n="exp1-company">NichanLabs, Errachidia</p>
-            </div>
-          </div>
-
-          <ul>
-            <li data-i18n="exp1-li1">Participation au développement d'une plateforme de gestion scolaire au sein d'une équipe projet.</li>
-            <li data-i18n="exp1-li2">Développement des interfaces des utilisateurs avec Next.js et Tailwind CSS.</li>
-            <li data-i18n="exp1-li3">Intégration des API REST développées avec NestJS et connectées à une base de données MongoDB.</li>
-            <li data-i18n="exp1-li4">Collaboration avec GitHub (versionnement), Jira (suivi des tâches) et Postman (tests des API).</li>
-          </ul>
-          <div class="tags"><span>Next.js</span><span>Tailwind CSS</span><span>NestJS</span><span>MongoDB</span><span>Postman</span><span>GitHub</span><span>Jira</span></div>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container">
-        <h3 class="section-title reveal" data-i18n="projects-title">Mes <span class="grad">projets</span></h3>
-
-        <div class="filters reveal">
-          <button class="filter active" data-filter="all" data-i18n="filter-all">Tous</button>
-          <button class="filter" data-filter="web" data-i18n="filter-web">Web / Backend</button>
-          <button class="filter" data-filter="desktop" data-i18n="filter-desktop">Desktop</button>
-          <button class="filter" data-filter="ai" data-i18n="filter-ai">IA / Python</button>
-            <button class="filter" data-filter="robot" data-i18n="filter-robot">Robotique</button>
-
-        </div>
-
-        <div class="projects-grid">
-          <!-- Projet 1 -->
-          <article class="card project reveal" data-cat="web" data-project="cabinet">
-            <div class="p-media">
-              <img src="portfolio\images\img cabinet medc.jpg" alt="Aperçu du projet Gestion d'un cabinet médical" width="800" height="500" loading="lazy" />
-              <span class="p-cat" data-i18n="cat-web">Web / Backend</span>
-            </div>
-            <div class="p-body">
-              <h4 data-i18n="proj1-title">Gestion d'un cabinet médical</h4>
-              <p data-i18n="proj1-desc">Gestion des patients, médecins et dossiers médicaux, avec un système de demandes de consultation validées ou refusées par l'administration. API REST sécurisée.</p>
-              <div class="tags"><span>Spring Boot</span><span>MySQL</span><span>API REST</span><span>Javascript</span><span>Html , CSS</span></div>
-              <div class="p-links">
-                <a class="p-link" data-link="git" target="_blank" rel="noopener"><svg class="ico"><use href="https://github.com/khawla858/Medical_Spring-boot.git"/></svg> <span data-i18n="link-git">Code source</span></a>
-                <a class="p-link demo" data-link="demo" target="_blank" rel="noopener"><svg class="ico"><use href="https://lnkd.in/p/em5p8ihV"/></svg> <span data-i18n="link-demo">Démo live</span></a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Projet 2 -->
-          <article class="card project reveal" data-cat="web" data-project="microservices">
-            <div class="p-media">
-              <img src="images/enrol.jpg" alt="Aperçu du projet Application en microservices" width="800" height="500" loading="lazy" />
-              <span class="p-cat" data-i18n="cat-web">Web / Backend</span>
-            </div>
-            <div class="p-body">
-              <h4 data-i18n="proj2-title">AcadémIA — Système d'inscription en microservices</h4>
-              <p data-i18n="proj2-desc">Application décomposée en plusieurs microservices indépendants, communiquant via API REST, avec une séparation claire des responsabilités et des données.</p>
-              <div class="tags"><span>Spring Boot</span><span>Microservices</span><span>API REST</span></div>
-              <div class="p-links">
-                <a class="p-link" data-link="git" target="_blank" rel="noopener"><svg class="ico"><use href="https://github.com/khawla858/Microservice_Spring-boot.git"/></svg> <span data-i18n="link-git">Code source</span></a>
-                <a class="p-link demo" data-link="demo" target="_blank" rel="noopener"><svg class="ico"><use href="#i-external"/></svg> <span data-i18n="link-demo">Démo live</span></a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Projet 3 -->
-          <article class="card project reveal" data-cat="desktop" data-project="vehicules">
-            <div class="p-media">
-              <img src="images/VOIT IMG.jpg" alt="Aperçu du projet Gestion et vente de véhicules" width="800" height="500" loading="lazy" />
-              <span class="p-cat" data-i18n="cat-desktop">Desktop</span>
-            </div>
-            <div class="p-body">
-              <h4 data-i18n="proj3-title">Gestion et vente de véhicules</h4>
-              <p data-i18n="proj3-desc">Application desktop JavaFX de gestion des véhicules, clients et ventes. Recherche avancée, visualisation des données et logs avec Elasticsearch et Kibana.</p>
-              <div class="tags"><span>Java</span><span>JavaFX</span><span>PostgreSQL</span><span>Elasticsearch</span><span>Kibana</span></div>
-              <div class="p-links">
-                <a class="p-link" data-link="git" target="_blank" rel="noopener"><svg class="ico"><use href="https://github.com/khawla858/vehiclegestion_Javafx.git"/></svg> <span data-i18n="link-git">Code source</span></a>
-                <a class="p-link demo" data-link="demo" target="_blank" rel="noopener"><svg class="ico"><use href="https://lnkd.in/p/eWm469ET"/></svg> <span data-i18n="link-demo">Démo live</span></a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Projet 4 -->
-          <article class="card project reveal" data-cat="ai" data-project="multimedia">
-            <div class="p-media">
-              <img src="images/mutlidia.jpg" alt="Aperçu du projet Analyse multimédia intelligente" width="800" height="500" loading="lazy" />
-              <span class="p-cat" data-i18n="cat-ai">IA / Python</span>
-            </div>
-            <div class="p-body">
-              <h4 data-i18n="proj4-title">Analyse multimédia intelligente</h4>
-              <p data-i18n="proj4-desc">Analyse de vidéos YouTube et de contenus académiques, avec génération de résumés (texte et images clés).</p>
-              <div class="tags"><span>Python</span><span>Flask</span><span>Machine Learning</span><span>SQLite</span></div>
-              <div class="p-links">
-                <a class="p-link" data-link="git" target="_blank" rel="noopener"><svg class="ico"><use href="https://github.com/khawla858/Python_projet_preparation_donn-es-.git"/></svg> <span data-i18n="link-git">Code source</span></a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Projet 5 -->
-          <article class="card project reveal" data-cat="web" data-project="affectation">
-            <div class="p-media">
-              <img src="images/WhatsApp Image 2026-10-13 at 12.41.22.jpeg" alt="Aperçu du projet Affectation des unités d'enseignement" width="800" height="500" loading="lazy" />
-              <span class="p-cat" data-i18n="cat-web">Web / Backend</span>
-            </div>
-            <div class="p-body">
-              <h4 data-i18n="proj5-title">Affectation des unités d'enseignement</h4>
-              <p data-i18n="proj5-desc">Application web de gestion des unités d'enseignement et des affectations des professeurs.</p>
-              <div class="tags"><span>PHP</span><span>JavaScript</span><span>Bootstrap</span><span>MySQL</span></div>
-              <div class="p-links">
-                <a class="p-link" data-link="git" target="_blank" rel="noopener"><svg class="ico"><use href="https://github.com/khawla858/Web_enseignement.git"/></svg> <span data-i18n="link-git">Code source</span></a>
-<a class="p-link demo" href="images/WhatsApp Video 2026-10-13 at 20.16.50.mp4" target="_blank" rel="noopener"><svg class="ico"><use href="#i-external"/></svg> <span data-i18n="link-demo">Voir la vidéo</span></a>              </div>
-            </div>
-          </article>
-
-          <!-- Projet 6: Robot suiveur de ligne -->
-<article class="card project reveal" data-cat="robot" data-project="robot">
-  <div class="p-media">
-    <img src="images/imge robot2.jpg" alt="Aperçu du projet Robot suiveur de ligne" width="800" height="500" loading="lazy" />
-    <span class="p-cat" data-i18n="cat-robot">Robotique</span>
-  </div>
-  <div class="p-body">
-    <h4 data-i18n="proj6-title">Robot suiveur de ligne</h4>
-    <p data-i18n="proj6-desc">
-      Projet enrichissant réalisé dans le cadre du module de robotique, portant sur la conception d'un robot capable de détecter et suivre une ligne noire à l'aide de capteurs.
-    </p>
-    <div class="tags">
-      <span>Arduino</span><span>C++</span><span>Capteurs IR</span><span>L298N</span>
-    </div>
-    <div class="p-links">
-  <a class="p-link demo" data-link="demo" target="_blank" rel="noopener">
-    <svg class="ico"><use href="#i-external"/></svg> 
-    <span data-i18n="link-demo">Voir le projet</span>
-  </a>
-</div>
-  </div>
-</article>
-        </div>
-
-        <div class="center reveal">
-          <a href="https://github.com/khawla858" target="_blank" rel="noopener" class="btn ghost"><svg class="ico"><use href="#i-github"/></svg> <span data-i18n="github-all">Voir tous mes dépôts sur GitHub</span></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section id="skills" class="section alt">
-      <div class="container">
-        <h3 class="section-title reveal" data-i18n="skills-title">Compétences <span class="grad">techniques</span></h3>
-        <div class="skills-grid">
-          <div class="card skill-card reveal">
-            <h4 data-i18n="skill-lang">Langages</h4>
-            <div class="tags big"><span>C</span><span>C++</span><span>Java</span><span>Python</span><span>JavaScript</span><span>PHP</span><span>SQL</span><span>HTML</span><span>CSS</span></div>
-          </div>
-          <div class="card skill-card reveal">
-            <h4 data-i18n="skill-fw">Frameworks</h4>
-            <div class="tags big"><span>Spring Boot</span><span>React.js</span><span>Next.js</span><span>Angular</span><span>Flask</span><span>Bootstrap</span><span>Tailwind CSS</span></div>
-          </div>
-          <div class="card skill-card reveal">
-            <h4 data-i18n="skill-db">Bases de données</h4>
-            <div class="tags big"><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>SQLite</span><span>Oracle DB</span></div>
-          </div>
-          <div class="card skill-card reveal">
-            <h4 data-i18n="skill-search">Recherche & visualisation</h4>
-            <div class="tags big"><span>Elasticsearch</span><span>Kibana</span></div>
-          </div>
-          <div class="card skill-card reveal">
-            <h4 data-i18n="skill-tools">Outils & technologies</h4>
-            <div class="tags big"><span>Git</span><span>GitHub</span><span>Jira</span><span>Postman</span><span>JavaFX</span><span>VS Code</span><span>Android studio</span><span>Docker</span><span>Qt Creator</span><span>Linux</span><span>Canva</span><span>Gamma</span></div>
-          </div>
-          <div class="card skill-card reveal">
-            <h4 data-i18n="skill-dom">Domaines</h4>
-            <div class="tags big"><span data-i18n="dom1">Génie logiciel</span><span>Full-Stack</span><span>API REST</span><span>Microservices</span><span>POO</span><span>SQL / NoSQL</span></div>
-          </div>
-        </div>
-
-        <h4 class="sub-title reveal" data-i18n="skills-trans">Compétences transversales</h4>
-        <div class="tags big center-tags reveal">
-          <span data-i18n="trans1">Gestion de projet</span><span data-i18n="trans2">Travail en équipe</span>
-          <span data-i18n="trans3">Résolution de problèmes</span><span data-i18n="trans4">Esprit critique</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section id="education" class="section">
-      <div class="container">
-        <h3 class="section-title reveal" data-i18n="education-title">Formation & <span class="grad">langues</span></h3>
-        <div class="edu-layout">
-          <div class="timeline">
-            <div class="tl-item reveal">
-              <div class="tl-dot"></div>
-              <div class="card">
-                <span class="date">2024 — 2027</span>
-                <h4 data-i18n="edu1-title">Cycle d'ingénieur — Génie Informatique</h4>
-                <p class="company" data-i18n="edu1-company">École Nationale des Sciences Appliquées d'Al Hoceima, Maroc</p>
-              </div>
-            </div>
-            <div class="tl-item reveal">
-              <div class="tl-dot"></div>
-              <div class="card">
-                <span class="date">2022 — 2024</span>
-                <h4 data-i18n="edu2-title">Cycle préparatoire intégré</h4>
-                <p class="company" data-i18n="edu2-company">École Nationale des Sciences Appliquées d'Al Hoceima, Maroc</p>
-              </div>
-            </div>
-            <div class="tl-item reveal">
-              <div class="tl-dot"></div>
-              <div class="card">
-                <span class="date">2021 — 2022</span>
-                <h4 data-i18n="edu3-title">Baccalauréat — Sciences Mathématiques A (option français)</h4>
-                <p class="company" data-i18n="edu3-company">Lycée Salah Eddine El Ayoubi, Tinghir, Maroc</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="lang-box reveal">
-            <h4 data-i18n="lang-title">Langues</h4>
-            <div class="lang"><div class="lang-head"><span data-i18n="lang-ar">Arabe</span><small data-i18n="lang-ar-lvl">Langue maternelle</small></div><div class="bar"><i data-w="100"></i></div></div>
-            <div class="lang"><div class="lang-head"><span data-i18n="lang-fr">Français</span><small data-i18n="lang-fr-lvl">Courant</small></div><div class="bar"><i data-w="85"></i></div></div>
-            <div class="lang"><div class="lang-head"><span data-i18n="lang-en">Anglais</span><small data-i18n="lang-en-lvl">Intermédiaire </small></div><div class="bar"><i data-w="65"></i></div></div>
-
-            <h4 class="mt" data-i18n="interests-title">Centres d'intérêt</h4>
-            <div class="tags big"><span data-i18n="int1">Projets personnels de développement</span><span data-i18n="int2">Lecture</span><span data-i18n="int3">Sport</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CV -->
-    <section id="cv" class="section alt compact">
-      <div class="container">
-        <div class="cv-compact card reveal">
-          <button type="button" class="cv-thumb" id="cv-open" aria-label="Agrandir le CV">
-            <img id="cv-thumb" src="images/cv-apercu-1.png" alt="Aperçu du CV de Khaoula Sidi" loading="lazy" />
-          </button>
-          <div class="cv-info">
-            <h4 data-i18n="cv-title">Mon <span class="grad">CV</span> et ma lettre</h4>
-            <p data-i18n="cv-desc">Élève ingénieure en Génie Informatique · Stage PFE de 6 mois dès Février 2027. Cliquez sur l'aperçu pour l'agrandir.</p>
-            <div class="cv-actions">
-              <a class="btn primary" href="CV_Khaoula_Sidi.pdf?v=2" target="_blank" rel="noopener"><svg class="ico"><use href="#i-file"/></svg> <span data-i18n="cv-btn-fr">CV en français</span></a>
-              <a class="btn primary" href="images/CV_Khaoula_Sidi_ENG.pdf?v=2" target="_blank" rel="noopener"><svg class="ico"><use href="#i-file"/></svg> <span data-i18n="cv-btn-en">CV en anglais</span></a>
-              <a class="btn ghost" href="images/Lettre_Motivation_Khaoula Sidi_PFE.pdf" target="_blank" rel="noopener"><svg class="ico"><use href="#i-file"/></svg> <span data-i18n="cv-btn-letter">Lettre de motivation</span></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section">
-      <div class="container">
-        <h3 class="section-title reveal" data-i18n="contact-title">Me <span class="grad">contacter</span></h3>
-        <p class="center lead reveal" data-i18n="contact-lead">Un projet, une opportunité de stage PFE ou juste envie d'échanger ? Écrivez-moi !</p>
-        <div class="contact-grid">
-          <div class="contact-info reveal">
-<a class="c-item" href="https://mail.google.com/mail/?view=cm&fs=1&to=khaoula192004@gmail.com&su=Opportunit%C3%A9%20de%20stage%20PFE" target="_blank" rel="noopener">
-  <span class="c-ico"><svg class="ico"><use href="#i-mail"/></svg></span>
-  <div><b data-i18n="contact-email">Email</b><small>khaoula192004@gmail.com</small></div>
-</a>            <a class="c-item" href="tel:+212618988466"><span class="c-ico"><svg class="ico"><use href="#i-phone"/></svg></span><div><b data-i18n="contact-phone">Téléphone</b><small>+212 6 18 98 84 66</small></div></a>
-            <a class="c-item" href="https://linkedin.com/in/khawla-sidi" target="_blank" rel="noopener"><span class="c-ico"><svg class="ico"><use href="#i-linkedin"/></svg></span><div><b>LinkedIn</b><small>linkedin.com/in/khawla-sidi</small></div></a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <p>© <span id="year"></span> _ Khaoula Sidi </p>
-  </footer>
-
-  <div id="lightbox" class="lightbox" hidden aria-modal="true" role="dialog"><img alt="" /></div>
-
-  <button id="to-top" class="to-top" aria-label="Haut de page"><svg class="ico"><use href="#i-up"/></svg></button>
-
-  <script src="script.js"></script>
-</body>
-</html>
-<style>
-  /* ============ THEME ============ */
+  <style>
+/* ============ THEME ============ */
 :root {
   --bg: #0b0f1a;
   --bg-alt: #0f1424;
@@ -409,11 +29,10 @@
   --radius: 18px;
 }
 /* Experience Header */
-/* Experience Header */
 .exp-header {
   display: flex;
   gap: 16px;
-  align-items: center; /* Kaymarkezi l'logo m3a l'texte */
+  align-items: center; /* logo centré avec le texte */
   margin-bottom: 14px;
 }
 
@@ -425,7 +44,7 @@
   border: 1px solid var(--card-border);
   background: #fff;
   padding: 4px;
-  flex: none; /* Bach l'logo ma ytqellech */
+  flex: none; /* empêche le logo de rétrécir */
 }
 
 .exp-info {
@@ -461,6 +80,7 @@ body {
 }
 h1, h2, h3, h4 { font-family: "Space Grotesk", sans-serif; line-height: 1.2; }
 a { color: inherit; text-decoration: none; }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent-2); outline-offset: 3px; border-radius: 6px; }
 ul { list-style: none; }
 img { display: block; max-width: 100%; }
 .container { width: min(1100px, 92%); margin: 0 auto; }
@@ -760,21 +380,410 @@ img { display: block; max-width: 100%; }
   .reveal { opacity: 1; transform: none; }
 }
 </style>
-<script>
-  // ====================================================================
+</head>
+<body>
+
+  <!-- ICONES SVG (sprite) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h8M8 9h2"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+  </svg>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">KS<span>.</span></a>
+    <nav id="nav-links" class="nav-links">
+      <a href="#about" data-i18n="nav-about">À propos</a>
+      <a href="#experience" data-i18n="nav-experience">Expérience</a>
+      <a href="#projects" data-i18n="nav-projects">Projets</a>
+      <a href="#skills" data-i18n="nav-skills">Compétences</a>
+      <a href="#education" data-i18n="nav-education">Formation</a>
+      <a href="#cv" data-i18n="nav-cv">CV</a>
+      <a href="#contact" data-i18n="nav-contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="lang-toggle" class="icon-btn lang-btn" aria-label="Changer de langue / Change language"><span id="lang-text">FR</span></button>
+      <button id="menu-toggle" class="icon-btn menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><svg class="ico"><use href="#i-menu"/></svg></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+      <div class="container hero-inner">
+        <p class="badge reveal"><span class="dot"></span> <span data-i18n="hero-badge">Disponible pour un stage PFE — Février 2027</span></p>
+        <h1 class="reveal"><span data-i18n="hero-title">Bonjour, je suis</span> <span class="grad">Khaoula Sidi</span></h1>
+        <h2 class="reveal"><span id="typed"></span><span class="cursor">|</span></h2>
+        <p class="lead reveal" data-i18n="hero-lead">
+          Élève ingénieure en Génie Informatique, passionnée par la conception et le développement
+          d'applications web et mobile. À la recherche d'un stage PFE de 6 mois.
+        </p>
+        <div class="hero-btns reveal">
+          <a href="#projects" class="btn primary" data-i18n="hero-btn-projects">Voir mes projets</a>
+          <a href="#cv" class="btn ghost"><svg class="ico"><use href="#i-file"/></svg> <span data-i18n="hero-btn-cv">Voir mon CV</span></a>
+          <a href="#contact" class="btn ghost" data-i18n="hero-btn-contact">Me contacter</a>
+        </div>
+        <div class="socials reveal">
+          <a href="https://github.com/khawla858" target="_blank" rel="noopener"><svg class="ico"><use href="#i-github"/></svg> GitHub</a>
+          <a href="https://linkedin.com/in/khawla-sidi" target="_blank" rel="noopener"><svg class="ico"><use href="#i-linkedin"/></svg> LinkedIn</a>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=khaoula192004@gmail.com&su=Opportunit%C3%A9%20de%20stage%20PFE" target="_blank" rel="noopener"><svg class="ico"><use href="#i-mail"/></svg> Email</a>        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <h3 class="section-title reveal" data-i18n="about-title">À propos de <span class="grad">moi</span></h3>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p data-i18n="about-p1">
+              Étudiante en <strong>Génie Informatique</strong>, spécialisée en <strong>Génie Logiciel</strong>
+              et développement <strong>Full-Stack</strong>. J'aime concevoir des applications web et mobile
+              robustes, avec des compétences en Java, Spring Boot, API REST, Python, Next.js et bases de données.
+            </p>
+            <p data-i18n="about-p2">
+              Mes compétences ont été acquises à travers plusieurs projets académiques et une expérience
+              pratique en entreprise. Je cherche aujourd'hui un <strong>stage PFE de 6 mois à partir de
+              Février 2027</strong> pour contribuer à des projets logiciels concrets.
+            </p>
+            <div class="info-list">
+              <div><span><svg class="ico"><use href="#i-pin"/></svg> <span data-i18n="info-loc">Localisation</span></span> <span data-i18n="info-loc-val">Maroc</span></div>
+              <div><span><svg class="ico"><use href="#i-mail"/></svg> <span data-i18n="info-email">Email</span></span> khaoula192004@gmail.com</div>
+              <div><span><svg class="ico"><use href="#i-phone"/></svg> <span data-i18n="info-phone">Téléphone</span></span> +212 6 18 98 84 66</div>
+              <div><span><svg class="ico"><use href="#i-briefcase"/></svg> <span data-i18n="info-objective">Objectif</span></span> <span data-i18n="info-objective-val">Stage PFE · 6 mois</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section alt">
+  <div class="container">
+    <h3 class="section-title reveal" data-i18n="experience-title">Expérience <span class="grad">professionnelle</span></h3>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="card">
+          
+          <!-- Logo + infos -->
+          <div class="exp-header">
+            <img src="images/Nichanlabs logo.jpg" alt="Logo NichanLabs" class="exp-logo" />
+            <div class="exp-info">
+              <span class="date" data-i18n="exp1-date">Juin 2025 — Août 2025</span>
+              <h4 data-i18n="exp1-title">Stagiaire Développeuse Frontend (Next.js)</h4>
+              <p class="company" data-i18n="exp1-company">NichanLabs, Errachidia</p>
+            </div>
+          </div>
+
+          <ul>
+            <li data-i18n="exp1-li1">Participation au développement d'une plateforme de gestion scolaire au sein d'une équipe projet.</li>
+            <li data-i18n="exp1-li2">Développement de l'interface utilisateur avec Next.js et Tailwind CSS.</li>
+            <li data-i18n="exp1-li3">Intégration des API REST développées avec NestJS et connectées à une base de données MongoDB.</li>
+            <li data-i18n="exp1-li4">Collaboration avec GitHub (versionnement), Jira (suivi des tâches) et Postman (tests des API).</li>
+          </ul>
+          <div class="tags"><span>Next.js</span><span>Tailwind CSS</span><span>NestJS</span><span>MongoDB</span><span>Postman</span><span>GitHub</span><span>Jira</span></div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h3 class="section-title reveal" data-i18n="projects-title">Mes <span class="grad">projets</span></h3>
+
+        <div class="filters reveal">
+          <button class="filter active" data-filter="all" data-i18n="filter-all">Tous</button>
+          <button class="filter" data-filter="web" data-i18n="filter-web">Web / Backend</button>
+          <button class="filter" data-filter="desktop" data-i18n="filter-desktop">Desktop</button>
+          <button class="filter" data-filter="ai" data-i18n="filter-ai">IA / Python</button>
+            <button class="filter" data-filter="robot" data-i18n="filter-robot">Robotique</button>
+
+        </div>
+
+        <div class="projects-grid">
+          <!-- Projet 1 -->
+          <article class="card project reveal" data-cat="web" data-project="cabinet">
+            <div class="p-media">
+              <img src="images/img cabinet medc.jpg" alt="Aperçu du projet Gestion d'un cabinet médical" width="800" height="500" loading="lazy" />
+              <span class="p-cat" data-i18n="cat-web">Web / Backend</span>
+            </div>
+            <div class="p-body">
+              <h4 data-i18n="proj1-title">Gestion d'un cabinet médical</h4>
+              <p data-i18n="proj1-desc">Gestion des patients, médecins et dossiers médicaux, avec un système de demandes de consultation validées ou refusées par l'administration. API REST sécurisée.</p>
+              <div class="tags"><span>Spring Boot</span><span>MySQL</span><span>API REST</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div>
+              <div class="p-links">
+                <a class="p-link" data-link="git" target="_blank" rel="noopener"><svg class="ico"><use href="#i-github"/></svg> <span data-i18n="link-git">Code source</span></a>
+                <a class="p-link demo" data-link="demo" target="_blank" rel="noopener"><svg class="ico"><use href="#i-external"/></svg> <span data-i18n="link-demo">Démo live</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 2 -->
+          <article class="card project reveal" data-cat="web" data-project="microservices">
+            <div class="p-media">
+              <img src="images/enrol.jpg" alt="Aperçu du projet Application en microservices" width="800" height="500" loading="lazy" />
+              <span class="p-cat" data-i18n="cat-web">Web / Backend</span>
+            </div>
+            <div class="p-body">
+              <h4 data-i18n="proj2-title">AcadémIA — Système d'inscription en microservices</h4>
+              <p data-i18n="proj2-desc">Application décomposée en plusieurs microservices indépendants, communiquant via API REST, avec une séparation claire des responsabilités et des données.</p>
+              <div class="tags"><span>Spring Boot</span><span>Microservices</span><span>API REST</span></div>
+              <div class="p-links">
+                <a class="p-link" data-link="git" target="_blank" rel="noopener"><svg class="ico"><use href="#i-github"/></svg> <span data-i18n="link-git">Code source</span></a>
+                <a class="p-link demo" data-link="demo" target="_blank" rel="noopener"><svg class="ico"><use href="#i-external"/></svg> <span data-i18n="link-demo">Démo live</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 3 -->
+          <article class="card project reveal" data-cat="desktop" data-project="vehicules">
+            <div class="p-media">
+              <img src="images/VOIT IMG.jpg" alt="Aperçu du projet Gestion et vente de véhicules" width="800" height="500" loading="lazy" />
+              <span class="p-cat" data-i18n="cat-desktop">Desktop</span>
+            </div>
+            <div class="p-body">
+              <h4 data-i18n="proj3-title">Gestion et vente de véhicules</h4>
+              <p data-i18n="proj3-desc">Application desktop JavaFX de gestion des véhicules, clients et ventes. Recherche avancée, visualisation des données et logs avec Elasticsearch et Kibana.</p>
+              <div class="tags"><span>Java</span><span>JavaFX</span><span>PostgreSQL</span><span>Elasticsearch</span><span>Kibana</span></div>
+              <div class="p-links">
+                <a class="p-link" data-link="git" target="_blank" rel="noopener"><svg class="ico"><use href="#i-github"/></svg> <span data-i18n="link-git">Code source</span></a>
+                <a class="p-link demo" data-link="demo" target="_blank" rel="noopener"><svg class="ico"><use href="#i-external"/></svg> <span data-i18n="link-demo">Démo live</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 4 -->
+          <article class="card project reveal" data-cat="ai" data-project="multimedia">
+            <div class="p-media">
+              <img src="images/mutlidia.jpg" alt="Aperçu du projet Analyse multimédia intelligente" width="800" height="500" loading="lazy" />
+              <span class="p-cat" data-i18n="cat-ai">IA / Python</span>
+            </div>
+            <div class="p-body">
+              <h4 data-i18n="proj4-title">Analyse multimédia intelligente</h4>
+              <p data-i18n="proj4-desc">Analyse de vidéos YouTube et de contenus académiques, avec génération de résumés (texte et images clés).</p>
+              <div class="tags"><span>Python</span><span>Flask</span><span>Machine Learning</span><span>SQLite</span></div>
+              <div class="p-links">
+                <a class="p-link" data-link="git" target="_blank" rel="noopener"><svg class="ico"><use href="#i-github"/></svg> <span data-i18n="link-git">Code source</span></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Projet 5 -->
+          <article class="card project reveal" data-cat="web" data-project="affectation">
+            <div class="p-media">
+              <img src="images/WhatsApp Image 2026-10-13 at 12.41.22.jpeg" alt="Aperçu du projet Affectation des unités d'enseignement" width="800" height="500" loading="lazy" />
+              <span class="p-cat" data-i18n="cat-web">Web / Backend</span>
+            </div>
+            <div class="p-body">
+              <h4 data-i18n="proj5-title">Affectation des unités d'enseignement</h4>
+              <p data-i18n="proj5-desc">Application web de gestion des unités d'enseignement et des affectations des professeurs.</p>
+              <div class="tags"><span>PHP</span><span>JavaScript</span><span>Bootstrap</span><span>MySQL</span></div>
+              <div class="p-links">
+                <a class="p-link" data-link="git" target="_blank" rel="noopener"><svg class="ico"><use href="#i-github"/></svg> <span data-i18n="link-git">Code source</span></a>
+<a class="p-link demo" href="images/WhatsApp Video 2026-10-13 at 20.16.50.mp4" target="_blank" rel="noopener"><svg class="ico"><use href="#i-external"/></svg> <span data-i18n="link-video">Voir la vidéo</span></a>              </div>
+            </div>
+          </article>
+
+          <!-- Projet 6: Robot suiveur de ligne -->
+<article class="card project reveal" data-cat="robot" data-project="robot">
+  <div class="p-media">
+    <img src="images/imge robot2.jpg" alt="Aperçu du projet Robot suiveur de ligne" width="800" height="500" loading="lazy" />
+    <span class="p-cat" data-i18n="cat-robot">Robotique</span>
+  </div>
+  <div class="p-body">
+    <h4 data-i18n="proj6-title">Robot suiveur de ligne</h4>
+    <p data-i18n="proj6-desc">
+      Projet enrichissant réalisé dans le cadre du module de robotique, portant sur la conception d'un robot capable de détecter et suivre une ligne noire à l'aide de capteurs.
+    </p>
+    <div class="tags">
+      <span>Arduino</span><span>C++</span><span>Capteurs IR</span><span>L298N</span>
+    </div>
+    <div class="p-links">
+  <a class="p-link demo" data-link="demo" target="_blank" rel="noopener">
+    <svg class="ico"><use href="#i-external"/></svg> 
+    <span data-i18n="link-project">Voir le projet</span>
+  </a>
+</div>
+  </div>
+</article>
+        </div>
+
+        <div class="center reveal">
+          <a href="https://github.com/khawla858" target="_blank" rel="noopener" class="btn ghost"><svg class="ico"><use href="#i-github"/></svg> <span data-i18n="github-all">Voir tous mes dépôts sur GitHub</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h3 class="section-title reveal" data-i18n="skills-title">Compétences <span class="grad">techniques</span></h3>
+        <div class="skills-grid">
+          <div class="card skill-card reveal">
+            <h4 data-i18n="skill-dom">Domaines</h4>
+            <div class="tags big"><span data-i18n="dom1">Génie logiciel</span><span data-i18n="dom2">Développement Full-Stack</span><span data-i18n="dom3">API REST</span><span>Microservices</span><span data-i18n="dom5">POO</span><span data-i18n="dom6">Bases de données SQL/NoSQL</span></div>
+          </div>
+          <div class="card skill-card reveal">
+            <h4 data-i18n="skill-lang">Langages</h4>
+            <div class="tags big"><span>Java</span><span>Python</span><span>JavaScript</span><span>C</span><span>C++</span><span>PHP</span><span>SQL</span><span>HTML</span><span>CSS</span></div>
+          </div>
+          <div class="card skill-card reveal">
+            <h4 data-i18n="skill-fw">Frameworks</h4>
+            <div class="tags big"><span>Spring Boot</span><span>Angular</span><span>React.js</span><span>Next.js</span><span>Flask</span><span>Bootstrap</span><span>Tailwind CSS</span></div>
+          </div>
+          <div class="card skill-card reveal">
+            <h4 data-i18n="skill-db">Bases de données</h4>
+            <div class="tags big"><span>MySQL</span><span>PostgreSQL</span><span>MongoDB</span><span>SQLite</span><span>Oracle DB</span></div>
+          </div>
+          <div class="card skill-card reveal">
+            <h4 data-i18n="skill-cloud">Cloud &amp; Infrastructure</h4>
+            <div class="tags big"><span>Docker</span><span>OpenStack</span><span>Linux</span></div>
+          </div>
+          <div class="card skill-card reveal">
+            <h4 data-i18n="skill-erp">ERP &amp; Business Applications</h4>
+            <div class="tags big"><span>Odoo</span></div>
+          </div>
+          <div class="card skill-card reveal">
+            <h4 data-i18n="skill-search">Recherche &amp; Visualisation</h4>
+            <div class="tags big"><span>Elasticsearch</span><span>Kibana</span></div>
+          </div>
+          <div class="card skill-card reveal">
+            <h4 data-i18n="skill-tools">Outils</h4>
+            <div class="tags big"><span>Git</span><span>GitHub</span><span>Jira</span><span>Postman</span><span>JavaFX</span><span>Visual Studio Code</span><span>IntelliJ IDEA</span><span>Eclipse</span><span>Qt Creator</span><span>Android Studio</span><span>Excel</span><span>Word</span><span>PowerPoint</span><span>Canva</span></div>
+          </div>
+        </div>
+
+        <h4 class="sub-title reveal" data-i18n="skills-trans">Compétences transversales</h4>
+        <div class="tags big center-tags reveal">
+          <span data-i18n="trans1">Gestion de projet</span><span data-i18n="trans2">Travail en équipe</span>
+          <span data-i18n="trans3">Résolution de problèmes</span><span data-i18n="trans4">Esprit critique</span>
+          <span data-i18n="trans5">Autonomie</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container">
+        <h3 class="section-title reveal" data-i18n="education-title">Formation & <span class="grad">langues</span></h3>
+        <div class="edu-layout">
+          <div class="timeline">
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="card">
+                <span class="date">2024 — 2027</span>
+                <h4 data-i18n="edu1-title">Cycle d'ingénieur — Génie Informatique</h4>
+                <p class="company" data-i18n="edu1-company">École Nationale des Sciences Appliquées d'Al Hoceima, Maroc</p>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="card">
+                <span class="date">2022 — 2024</span>
+                <h4 data-i18n="edu2-title">Cycle préparatoire intégré</h4>
+                <p class="company" data-i18n="edu2-company">École Nationale des Sciences Appliquées d'Al Hoceima, Maroc</p>
+              </div>
+            </div>
+            <div class="tl-item reveal">
+              <div class="tl-dot"></div>
+              <div class="card">
+                <span class="date">2021 — 2022</span>
+                <h4 data-i18n="edu3-title">Baccalauréat — Sciences Mathématiques A (option français)</h4>
+                <p class="company" data-i18n="edu3-company">Lycée Salah Eddine El Ayoubi, Tinghir, Maroc</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lang-box reveal">
+            <h4 data-i18n="lang-title">Langues</h4>
+            <div class="lang"><div class="lang-head"><span data-i18n="lang-ar">Arabe</span><small data-i18n="lang-ar-lvl">Langue maternelle</small></div><div class="bar"><i data-w="100"></i></div></div>
+            <div class="lang"><div class="lang-head"><span data-i18n="lang-fr">Français</span><small data-i18n="lang-fr-lvl">Courant</small></div><div class="bar"><i data-w="85"></i></div></div>
+            <div class="lang"><div class="lang-head"><span data-i18n="lang-en">Anglais</span><small data-i18n="lang-en-lvl">Intermédiaire</small></div><div class="bar"><i data-w="65"></i></div></div>
+
+            <h4 class="mt" data-i18n="interests-title">Centres d'intérêt</h4>
+            <div class="tags big"><span data-i18n="int1">Projets personnels de développement</span><span data-i18n="int2">Lecture</span><span data-i18n="int3">Sport</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CV -->
+    <section id="cv" class="section alt compact">
+      <div class="container">
+        <div class="cv-compact card reveal">
+          <button type="button" class="cv-thumb" id="cv-open" aria-label="Agrandir le CV">
+            <img id="cv-thumb" src="images/cv-apercu-1.png" alt="Aperçu du CV de Khaoula Sidi" loading="lazy" />
+          </button>
+          <div class="cv-info">
+            <h4 data-i18n="cv-title">Mon <span class="grad">CV</span> et ma lettre</h4>
+            <p data-i18n="cv-desc">Élève ingénieure en Génie Informatique · Stage PFE de 6 mois dès Février 2027. Cliquez sur l'aperçu pour l'agrandir.</p>
+            <div class="cv-actions">
+              <a class="btn primary" href="CV_Khaoula_Sidi.pdf?v=3" target="_blank" rel="noopener"><svg class="ico"><use href="#i-file"/></svg> <span data-i18n="cv-btn-fr">CV en français</span></a>
+              <a class="btn primary" href="images/CV_Khaoula_Sidi_ENG.pdf?v=3" target="_blank" rel="noopener"><svg class="ico"><use href="#i-file"/></svg> <span data-i18n="cv-btn-en">CV en anglais</span></a>
+              <a class="btn ghost" href="images/Lettre_Motivation_Khaoula Sidi_PFE.pdf" target="_blank" rel="noopener"><svg class="ico"><use href="#i-file"/></svg> <span data-i18n="cv-btn-letter">Lettre de motivation</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h3 class="section-title reveal" data-i18n="contact-title">Me <span class="grad">contacter</span></h3>
+        <p class="center lead reveal" data-i18n="contact-lead">Un projet, une opportunité de stage PFE ou juste envie d'échanger ? Écrivez-moi !</p>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+<a class="c-item" href="https://mail.google.com/mail/?view=cm&fs=1&to=khaoula192004@gmail.com&su=Opportunit%C3%A9%20de%20stage%20PFE" target="_blank" rel="noopener">
+  <span class="c-ico"><svg class="ico"><use href="#i-mail"/></svg></span>
+  <div><b data-i18n="contact-email">Email</b><small>khaoula192004@gmail.com</small></div>
+</a>            <a class="c-item" href="tel:+212618988466"><span class="c-ico"><svg class="ico"><use href="#i-phone"/></svg></span><div><b data-i18n="contact-phone">Téléphone</b><small>+212 6 18 98 84 66</small></div></a>
+            <a class="c-item" href="https://linkedin.com/in/khawla-sidi" target="_blank" rel="noopener"><span class="c-ico"><svg class="ico"><use href="#i-linkedin"/></svg></span><div><b>LinkedIn</b><small>linkedin.com/in/khawla-sidi</small></div></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> — Khaoula Sidi</p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" hidden aria-modal="true" role="dialog"><img alt="" /></div>
+
+  <button id="to-top" class="to-top" aria-label="Haut de page"><svg class="ico"><use href="#i-up"/></svg></button>
+
+  <script>
+// ====================================================================
 //  LIENS DES PROJETS
 // ====================================================================
 const PROJECT_LINKS = {
   cabinet:      { git: "https://github.com/khawla858/Medical_Spring-boot.git", demo: "https://lnkd.in/p/em5p8ihV" },
-  microservices:{ git: "https://github.com/khawla858/Microservice_Spring-boot.git", demo: "https://www.linkedin.com/in/khawla-sidi-220055310/details/projects/" },
+  microservices:{ git: "https://github.com/khawla858/Microservice_Spring-boot.git", demo: "https://www.linkedin.com/in/khawla-sidi/details/projects/" },
   vehicules:    { git: "https://github.com/khawla858/vehiclegestion_Javafx.git", demo: "https://lnkd.in/p/eWm469ET" },
   multimedia:   { git: "https://github.com/khawla858/Python_projet_preparation_donn-es-.git", demo: "" },
   faciale:      { git: "https://github.com/khawla858", demo: "" },
   affectation:  { git: "https://github.com/khawla858/Web_enseignement.git", demo: "" },
   entreprise:   { git: "https://github.com/khawla858", demo: "" },
   conges:       { git: "https://github.com/khawla858", demo: "" },
-  robot:        { git: "", demo: "https://lnkd.in/p/eFa2vn5A" } // Hna zidna l'lien
-
+  robot:        { git: "", demo: "https://lnkd.in/p/eFa2vn5A" }
 };
 
 // ====================================================================
@@ -828,8 +837,12 @@ const navLinks = document.getElementById("nav-links");
 const menuBtn = document.getElementById("menu-toggle");
 const toTop = document.getElementById("to-top");
 
-if (menuBtn) menuBtn.addEventListener("click", () => navLinks.classList.toggle("open"));
-navLinks.querySelectorAll("a").forEach(a => a.addEventListener("click", () => navLinks.classList.remove("open")));
+function setMenu(open) {
+  navLinks.classList.toggle("open", open);
+  if (menuBtn) menuBtn.setAttribute("aria-expanded", String(open));
+}
+if (menuBtn) menuBtn.addEventListener("click", () => setMenu(!navLinks.classList.contains("open")));
+navLinks.querySelectorAll("a").forEach(a => a.addEventListener("click", () => setMenu(false)));
 
 window.addEventListener("scroll", () => {
   navbar.classList.toggle("scrolled", window.scrollY > 40);
@@ -955,9 +968,9 @@ const translations = {
     "hero-btn-cv": "Voir mon CV",
     "hero-btn-contact": "Me contacter",
     // About
-    "about-title": "À propos de moi",
-    "about-p1": "Étudiante en Génie Informatique, spécialisée en Génie Logiciel et développement Full-Stack. J'aime concevoir des applications web et mobile robustes, avec des compétences en Java, Spring Boot, API REST, Python, Next.js et bases de données.",
-    "about-p2": "Mes compétences ont été acquises à travers plusieurs projets académiques et une expérience pratique en entreprise. Je cherche aujourd'hui un stage PFE de 6 mois à partir de Février 2027 pour contribuer à des projets logiciels concrets.",
+    "about-title": "À propos de <span class=\"grad\">moi</span>",
+    "about-p1": "Étudiante en <strong>Génie Informatique</strong>, spécialisée en <strong>Génie Logiciel</strong> et développement <strong>Full-Stack</strong>. J'aime concevoir des applications web et mobile robustes, avec des compétences en Java, Spring Boot, API REST, Python, Next.js et bases de données.",
+    "about-p2": "Mes compétences ont été acquises à travers plusieurs projets académiques et une expérience pratique en entreprise. Je cherche aujourd'hui un <strong>stage PFE de 6 mois à partir de Février 2027</strong> pour contribuer à des projets logiciels concrets.",
     "info-loc": "Localisation",
     "info-loc-val": "Maroc",
     "info-email": "Email",
@@ -965,16 +978,16 @@ const translations = {
     "info-objective": "Objectif",
     "info-objective-val": "Stage PFE · 6 mois",
     // Experience
-    "experience-title": "Expérience professionnelle",
+    "experience-title": "Expérience <span class=\"grad\">professionnelle</span>",
     "exp1-date": "Juin 2025 — Août 2025",
     "exp1-title": "Stagiaire Développeuse Frontend (Next.js)",
     "exp1-company": "NichanLabs, Errachidia",
     "exp1-li1": "Participation au développement d'une plateforme de gestion scolaire au sein d'une équipe projet.",
-    "exp1-li2": "Développement des interfaces des utilisateurs avec Next.js et Tailwind CSS.",
+    "exp1-li2": "Développement de l'interface utilisateur avec Next.js et Tailwind CSS.",
     "exp1-li3": "Intégration des API REST développées avec NestJS et connectées à une base de données MongoDB.",
     "exp1-li4": "Collaboration avec GitHub (versionnement), Jira (suivi des tâches) et Postman (tests des API).",
     // Projects
-    "projects-title": "Mes projets",
+    "projects-title": "Mes <span class=\"grad\">projets</span>",
     "filter-all": "Tous",
     "filter-web": "Web / Backend",
     "filter-desktop": "Desktop",
@@ -996,27 +1009,34 @@ const translations = {
     "link-demo": "Démo live",
     "github-all": "Voir tous mes dépôts sur GitHub",
     // Robotique
-"filter-robot": "Robotique",
-"cat-robot": "Robotique",
-"proj6-title": "Robot suiveur de ligne",
-"proj6-desc": "Projet enrichissant réalisé dans le cadre du module de robotique, portant sur la conception d'un robot capable de détecter et suivre une ligne noire à l'aide de capteurs.",
-"link-project": "Voir le projet",
+    "filter-robot": "Robotique",
+    "cat-robot": "Robotique",
+    "proj6-title": "Robot suiveur de ligne",
+    "proj6-desc": "Projet enrichissant réalisé dans le cadre du module de robotique, portant sur la conception d'un robot capable de détecter et suivre une ligne noire à l'aide de capteurs.",
+    "link-project": "Voir le projet",
     // Skills
-    "skills-title": "Compétences techniques",
+    "skills-title": "Compétences <span class=\"grad\">techniques</span>",
     "skill-lang": "Langages",
     "skill-fw": "Frameworks",
     "skill-db": "Bases de données",
-    "skill-search": "Recherche & visualisation",
-    "skill-tools": "Outils & technologies",
+    "skill-search": "Recherche &amp; Visualisation",
+    "skill-tools": "Outils",
     "skill-dom": "Domaines",
+    "skill-cloud": "Cloud &amp; Infrastructure",
+    "skill-erp": "ERP &amp; Business Applications",
     "skills-trans": "Compétences transversales",
     "dom1": "Génie logiciel",
+    "dom2": "Développement Full-Stack",
+    "dom3": "API REST",
+    "dom5": "POO",
+    "dom6": "Bases de données SQL/NoSQL",
     "trans1": "Gestion de projet",
     "trans2": "Travail en équipe",
     "trans3": "Résolution de problèmes",
     "trans4": "Esprit critique",
+    "trans5": "Autonomie",
     // Education
-    "education-title": "Formation & langues",
+    "education-title": "Formation & <span class=\"grad\">langues</span>",
     "edu1-title": "Cycle d'ingénieur — Génie Informatique",
     "edu1-company": "École Nationale des Sciences Appliquées d'Al Hoceima, Maroc",
     "edu2-title": "Cycle préparatoire intégré",
@@ -1029,21 +1049,25 @@ const translations = {
     "lang-fr": "Français",
     "lang-fr-lvl": "Courant",
     "lang-en": "Anglais",
-    "lang-en-lvl": "Intermédiaire ",
+    "lang-en-lvl": "Intermédiaire",
     "interests-title": "Centres d'intérêt",
     "int1": "Projets personnels de développement",
     "int2": "Lecture",
     "int3": "Sport",
     // CV
-    "cv-title": "Mon CV",
-    "cv-desc": "Élève ingénieure en Génie Informatique · Stage PFE de 6 mois dès Février 2027.",
+    "cv-title": "Mon <span class=\"grad\">CV</span> et ma lettre",
+    "cv-desc": "Élève ingénieure en Génie Informatique · Stage PFE de 6 mois dès Février 2027. Cliquez sur l'aperçu pour l'agrandir.",
     "cv-download": "Télécharger",
     // Contact
-    "contact-title": "Me contacter",
+    "contact-title": "Me <span class=\"grad\">contacter</span>",
     "contact-lead": "Un projet, une opportunité de stage PFE ou juste envie d'échanger ? Écrivez-moi !",
     "contact-email": "Email",
     "contact-phone": "Téléphone",
     // Footer
+    "link-video": "Voir la vidéo",
+    "cv-btn-fr": "CV en français",
+    "cv-btn-en": "CV en anglais",
+    "cv-btn-letter": "Lettre de motivation",
     "footer-text": "Conçu avec HTML, CSS & JavaScript"
   },
   en: {
@@ -1063,9 +1087,9 @@ const translations = {
     "hero-btn-cv": "View my CV",
     "hero-btn-contact": "Contact me",
     // About
-    "about-title": "About me",
-    "about-p1": "Computer Engineering student, specialized in Software Engineering and Full-Stack development. I enjoy designing robust web and mobile applications, with skills in Java, Spring Boot, REST API, Python, Next.js and databases.",
-    "about-p2": "My skills were acquired through several academic projects and a practical experience in a company. I am currently looking for a 6-month PFE internship starting February 2027 to contribute to concrete software projects.",
+    "about-title": "About <span class=\"grad\">me</span>",
+    "about-p1": "Computer Engineering student, specialized in <strong>Software Engineering</strong> and <strong>Full-Stack</strong> development. I enjoy designing robust web and mobile applications, with skills in Java, Spring Boot, REST APIs, Python, Next.js and databases.",
+    "about-p2": "My skills were acquired through several academic projects and practical experience in a company. I am currently looking for a <strong>6-month PFE internship starting February 2027</strong> to contribute to real-world software projects.",
     "info-loc": "Location",
     "info-loc-val": "Morocco",
     "info-email": "Email",
@@ -1073,7 +1097,7 @@ const translations = {
     "info-objective": "Goal",
     "info-objective-val": "PFE Internship · 6 months",
     // Experience
-    "experience-title": "Professional Experience",
+    "experience-title": "Professional <span class=\"grad\">Experience</span>",
     "exp1-date": "June 2025 — August 2025",
     "exp1-title": "Frontend Developer Intern (Next.js)",
     "exp1-company": "NichanLabs, Errachidia",
@@ -1082,7 +1106,7 @@ const translations = {
     "exp1-li3": "Integrated REST APIs built with NestJS and connected to a MongoDB database.",
     "exp1-li4": "Collaborated with GitHub (versioning), Jira (task tracking) and Postman (API testing).",
     // Projects
-    "projects-title": "My Projects",
+    "projects-title": "My <span class=\"grad\">Projects</span>",
     "filter-all": "All",
     "filter-web": "Web / Backend",
     "filter-desktop": "Desktop",
@@ -1104,22 +1128,29 @@ const translations = {
     "link-demo": "Live demo",
     "github-all": "View all my repositories on GitHub",
     // Skills
-    "skills-title": "Technical Skills",
+    "skills-title": "Technical <span class=\"grad\">Skills</span>",
     "skill-lang": "Languages",
     "skill-fw": "Frameworks",
     "skill-db": "Databases",
-    "skill-search": "Search & visualization",
-    "skill-tools": "Tools & technologies",
+    "skill-search": "Search &amp; Visualization",
+    "skill-tools": "Tools",
     "skill-dom": "Domains",
+    "skill-cloud": "Cloud &amp; Infrastructure",
+    "skill-erp": "ERP &amp; Business Applications",
     "skills-trans": "Soft Skills",
     "dom1": "Software Engineering",
+    "dom2": "Full-Stack Development",
+    "dom3": "REST APIs",
+    "dom5": "OOP",
+    "dom6": "SQL/NoSQL Databases",
     "trans1": "Project management",
     "trans2": "Teamwork",
     "trans3": "Problem solving",
     "trans4": "Critical thinking",
+    "trans5": "Autonomy",
     // Education
-    "education-title": "Education & Languages",
-    "edu1-title": "Engineering Cycle — Computer Science",
+    "education-title": "Education & <span class=\"grad\">Languages</span>",
+    "edu1-title": "Engineering Cycle — Computer Engineering",
     "edu1-company": "National School of Applied Sciences of Al Hoceima, Morocco",
     "edu2-title": "Integrated Preparatory Cycle",
     "edu2-company": "National School of Applied Sciences of Al Hoceima, Morocco",
@@ -1131,27 +1162,31 @@ const translations = {
     "lang-fr": "French",
     "lang-fr-lvl": "Fluent",
     "lang-en": "English",
-    "lang-en-lvl": "Intermediate (B1/B2)",
+    "lang-en-lvl": "Intermediate",
     "interests-title": "Interests",
     "int1": "Personal development projects",
     "int2": "Reading",
     "int3": "Sports",
     // CV
-    "cv-title": "My CV",
-    "cv-desc": "Computer Engineering student · 6-month PFE internship from February 2027.",
+    "cv-title": "My <span class=\"grad\">CV</span> and cover letter",
+    "cv-desc": "Computer Engineering student · 6-month PFE internship from February 2027. Click the preview to enlarge.",
     "cv-download": "Download",
     // Contact
-    "contact-title": "Contact me",
+    "contact-title": "Contact <span class=\"grad\">me</span>",
     "contact-lead": "A project, a PFE internship opportunity or just want to chat? Write to me!",
     "contact-email": "Email",
     "contact-phone": "Phone",
     // Robotics
-"filter-robot": "Robotics",
-"cat-robot": "Robotics",
-"proj6-title": "Line Following Robot",
-"proj6-desc": "Enriching project carried out as part of the robotics module, focusing on the design of a robot capable of detecting and following a black line using sensors.",
-"link-project": "View project",
+    "filter-robot": "Robotics",
+    "cat-robot": "Robotics",
+    "proj6-title": "Line Following Robot",
+    "proj6-desc": "Enriching project carried out as part of the robotics module, focusing on the design of a robot capable of detecting and following a black line using sensors.",
+    "link-project": "View project",
     // Footer
+    "link-video": "Watch the video",
+    "cv-btn-fr": "CV in French",
+    "cv-btn-en": "CV in English",
+    "cv-btn-letter": "Cover letter",
     "footer-text": "Built with HTML, CSS & JavaScript"
   }
 };
@@ -1195,3 +1230,5 @@ try {
   }
 } catch(e) {}
 </script>
+</body>
+</html>
